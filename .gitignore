@@ -1,0 +1,41 @@
+__pycache__/
+.web
+*.py[cod]
+.states
+*.db
+assets/external/
+# Python
+
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/             # Your virtual environment
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+dist/
+build/
+*.egg
+
+# Logs and Models (Crucial for your app)
+agent_logs/       # Folder containing your .jsonl logs
+models/fraud_model.pkl # The generated ML model binary file
+
+# Environment variables
+.env              # Your local environment variables (including API key)
+
+# Streamlit specific
+.streamlit/secrets.toml # Streamlit Cloud secrets (if you set them locally for testing)
+
+# OS and IDE specific files
+.DS_Store         # macOS files
+.vscode/          # VS Code settings
+*.log             # General log files
+venv/
+__pycache__/
+*.pyc
+*.pkl
+agent_logs/
+models/

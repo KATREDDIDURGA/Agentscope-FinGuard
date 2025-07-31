@@ -1,0 +1,501 @@
+transaction_id,timestamp,amount,card_type,merchant,merchant_location,user_location,is_fraud
+ee222ca1-f635-4beb-b643-91a8937ed4a3,2025-07-26 23:48:15,3979.57,Credit,LagosTech Hub,"London, UK","New York, USA",1
+6d3c4384-3125-43b9-927b-c1637dad5a43,2025-07-12 23:48:15,301.01,Credit,Virtual Books,"San Francisco, USA","London, UK",0
+fb3c66b4-7510-4da4-98d2-fcd6900e0867,2025-07-24 23:48:15,131.67,Credit,Spotify,"San Francisco, USA","New York, USA",0
+e58f391e-fb82-481e-9875-1756c4b8dcab,2025-07-13 23:48:15,91.29,Virtual,Costco,"New York, USA","London, UK",0
+56c700df-026e-4c83-9c1d-04c978b0e499,2025-07-23 23:48:15,16.96,Virtual,CVS Pharmacy,"Berlin, Germany","London, UK",0
+1dbcc29f-ce2d-4b7f-8936-b8d9fe472685,2025-07-08 23:48:15,2500.0,Virtual,Google Ads,"London, UK","Austin, USA",1
+91f7c640-1f71-4e3e-82c6-2c29addf878d,2025-07-24 23:48:15,5.98,Debit,Spotify,"Austin, USA","Austin, USA",0
+f6749534-db95-4c7f-a7de-4933a03b5e44,2025-07-18 23:48:15,201.12,Debit,GameZone,"San Francisco, USA","New York, USA",0
+762f2466-16ad-4478-98e6-62d45bd3c479,2025-07-22 23:48:15,91.91,Debit,BestBuy,"Chicago, USA","Austin, USA",0
+33ebe43e-2654-40a4-bda6-05224125b4f0,2025-07-27 23:48:15,123.13,Virtual,Walmart,"Toronto, Canada","Lagos, Nigeria",0
+beda58b8-3feb-4c13-894b-ff81753cca6d,2025-07-12 23:48:15,2.08,Credit,Netflix,"Berlin, Germany","London, UK",1
+2b0b2bd4-511c-4bad-bccd-27c426ae3be4,2025-07-09 23:48:15,350.36,Virtual,CVS Pharmacy,"New York, USA","New York, USA",0
+2aba7434-d266-4653-8788-5ffce3cbcf7b,2025-07-03 23:48:15,178.64,Debit,Costco,"Lagos, Nigeria","New York, USA",0
+a222bf42-6029-416e-a899-4a3be3344d29,2025-07-10 23:48:15,23.87,Debit,BestBuy,"Tokyo, Japan","Austin, USA",0
+1c6cd8c9-2769-415b-94c6-76ca009fe851,2025-07-24 23:48:15,20.07,Credit,Lyft,"Mumbai, India","Austin, USA",0
+be8cfe5a-2c56-4162-a566-358f1d4d8e0d,2025-07-07 23:48:15,5539.91,Debit,MumbaiMobile,"Tokyo, Japan","New York, USA",1
+b3751ee5-dc57-467c-a133-a493ca94217b,2025-07-22 23:48:15,36.28,Credit,Costco,"Berlin, Germany","Lagos, Nigeria",0
+f9b9d0f0-04a4-44ef-865a-55536149c586,2025-07-09 23:48:15,74.39,Virtual,LagosTech Hub,"Lagos, Nigeria","London, UK",0
+d0357425-98f5-49a3-b56e-b9e94148f257,2025-07-05 23:48:15,56.55,Credit,Uber,"New York, USA","San Francisco, USA",0
+8b29863f-1480-4263-95b6-a1c7a6b35641,2025-07-24 23:48:15,34.42,Debit,Uber,"San Francisco, USA","Austin, USA",0
+3402d58a-98eb-4fd9-bdd8-bbe228c8b4b2,2025-07-10 23:48:15,2500.0,Virtual,H&M,"Lagos, Nigeria","Austin, USA",1
+0d7467cf-d79f-47ea-ade8-cbd0fc02e487,2025-07-22 23:48:15,15.02,Debit,Facebook Marketplace,"Austin, USA","Lagos, Nigeria",0
+9a7277e3-1643-4d56-81a7-c5ea8241becb,2025-07-22 23:48:15,34.55,Credit,Starbucks,"Toronto, Canada","London, UK",0
+d63e9b4d-1139-4a42-9878-95bf8c5fc981,2025-07-18 23:48:15,45.63,Virtual,Virtual Books,"Chicago, USA","Lagos, Nigeria",0
+f71577ab-4164-4dd0-8f1d-ab3cfe3131ab,2025-07-15 23:48:15,60.89,Credit,Lyft,"Toronto, Canada","San Francisco, USA",0
+1a768e91-b24a-45c1-8436-3313665c718a,2025-07-25 23:48:15,153.79,Credit,Target,"Toronto, Canada","New York, USA",1
+0ae640b8-55a9-490f-8c94-066fa6331243,2025-07-18 23:48:15,22.27,Debit,MumbaiMobile,"San Francisco, USA","London, UK",0
+020ee715-72ab-4d51-affc-5ae001b3b17a,2025-07-22 23:48:15,72.2,Virtual,Netflix,"Toronto, Canada","Lagos, Nigeria",0
+421c6606-ba40-497e-beff-7b12d4727327,2025-07-06 23:48:15,89.75,Credit,Zara,"Toronto, Canada","New York, USA",0
+b10e2ef4-64e1-46d6-9040-c40a53b0a5f0,2025-07-21 23:48:15,4.76,Virtual,Shell Gas,"San Francisco, USA","Austin, USA",0
+94bb013d-4299-4325-891f-1293c754304f,2025-06-30 23:48:15,93.53,Credit,Spotify,"New York, USA","Lagos, Nigeria",1
+9af701b5-8c2a-4a47-84e3-b9d9195607fc,2025-07-06 23:48:15,18.7,Virtual,Virtual Books,"Toronto, Canada","Austin, USA",0
+0fd517fd-88f6-4c3d-94db-2fd5c89fffe9,2025-07-04 23:48:15,6.73,Virtual,Apple Store,"London, UK","New York, USA",0
+ef6fd380-c59b-4808-af5f-4a260eee91ab,2025-07-26 23:48:15,297.37,Virtual,LagosTech Hub,"Lagos, Nigeria","London, UK",0
+d198c8ac-6b24-4f59-9663-d07475da8222,2025-07-01 23:48:15,337.06,Credit,Lyft,"Toronto, Canada","London, UK",0
+acdb6110-833e-4617-b835-da08b54a35d2,2025-07-30 23:48:15,2500.0,Virtual,Amazon,"Tokyo, Japan","Austin, USA",1
+4d2faaf8-433b-4c48-a783-ef537ac26f07,2025-07-29 23:48:15,36.33,Debit,BestBuy,"Lagos, Nigeria","Austin, USA",0
+a385789f-db17-466d-a0c3-5aa259a9aabc,2025-07-07 23:48:15,10.28,Virtual,Costco,"San Francisco, USA","New York, USA",0
+57856c2e-de7f-4c1f-b10e-fb0b397b41cb,2025-07-26 23:48:15,115.28,Credit,Facebook Marketplace,"Austin, USA","London, UK",0
+08eafef4-5818-4ea3-a40b-e58813a235b0,2025-07-22 23:48:15,58.01,Debit,MumbaiMobile,"Austin, USA","London, UK",0
+4b7a6d23-cde7-4f8c-82b7-5fbe27c79120,2025-07-08 23:48:15,6715.65,Virtual,Kirlin Electronics,"London, UK","Lagos, Nigeria",1
+bb83e9f0-b9fe-422d-b950-51aa3f382eb0,2025-07-02 23:48:15,68.35,Debit,Delta Airlines,"Tokyo, Japan","Austin, USA",0
+3408d3bc-fafc-49c3-8ff5-c5bf94cdaec1,2025-07-23 23:48:15,3.5,Debit,Kirlin Electronics,"Lagos, Nigeria","New York, USA",0
+ba083abf-aae3-40a5-a7a5-df2a32a4d524,2025-07-13 23:48:15,240.04,Debit,Target,"Chicago, USA","New York, USA",0
+22ef7bf6-2ae8-4325-8fa7-af45b36fdc57,2025-07-28 23:48:15,29.95,Virtual,Costco,"New York, USA","San Francisco, USA",0
+5f50764e-8322-488a-b384-39d3d68b58b7,2025-07-29 23:48:15,3269.6,Virtual,Moscow Bazaar,"Lagos, Nigeria","New York, USA",1
+b69f3ac6-d2cf-4bad-ae7d-0432f454dea6,2025-07-22 23:48:15,37.35,Credit,Uber,"Lagos, Nigeria","London, UK",0
+9774e5bb-bcc2-44bd-aaa1-fc32f7e1f735,2025-07-26 23:48:15,73.41,Debit,MumbaiMobile,"Toronto, Canada","San Francisco, USA",0
+99fbc91f-365c-4a55-8c5f-633c8b627003,2025-07-23 23:48:15,79.12,Virtual,Virtual Books,"Tokyo, Japan","London, UK",0
+b6835623-13ef-46b7-8966-ce21703d483d,2025-07-27 23:48:15,20.44,Debit,Facebook Marketplace,"San Francisco, USA","San Francisco, USA",0
+40dcfbb1-c637-4e48-b727-b4d03125c4ba,2025-07-03 23:48:15,4644.41,Debit,MumbaiMobile,"Berlin, Germany","Austin, USA",1
+8710e287-ca17-483b-a645-a7632cd2622b,2025-07-18 23:48:15,149.22,Credit,Virtual Books,"New York, USA","New York, USA",0
+0524a1d6-230e-4d26-86cb-8325b3ce3f48,2025-07-24 23:48:15,280.51,Debit,Virtual Books,"Lagos, Nigeria","New York, USA",0
+3e7a9d64-5cca-4efe-8be6-bbe64dd754d5,2025-07-17 23:48:15,225.22,Virtual,CVS Pharmacy,"Austin, USA","Lagos, Nigeria",0
+fe22fa9b-626a-4947-8d1b-2c006f144ed7,2025-07-03 23:48:15,91.11,Debit,Apple Store,"Lagos, Nigeria","Lagos, Nigeria",0
+1afc67f6-4ddc-43f0-9c6f-a296a8865b1c,2025-07-29 23:48:15,254.94,Debit,Target,"San Francisco, USA","London, UK",1
+12e835ab-7b90-43d2-8605-c1897189d460,2025-07-01 23:48:15,9.27,Virtual,LagosTech Hub,"San Francisco, USA","New York, USA",0
+27197bfa-126d-4408-91cb-a2df654a9592,2025-07-15 23:48:15,21.81,Credit,GameZone,"Berlin, Germany","San Francisco, USA",0
+089b4edc-dee0-42aa-b468-7620a1262661,2025-07-25 23:48:15,4.63,Credit,Facebook Marketplace,"New York, USA","Lagos, Nigeria",0
+c6c14e8c-78c7-459f-9097-388f28a85337,2025-07-01 23:48:15,39.35,Credit,Netflix,"London, UK","Lagos, Nigeria",0
+c9fe58b4-5ea7-4f16-8c4f-ea092cd517b5,2025-07-09 23:48:15,49.21,Debit,Google Ads,"Toronto, Canada","Lagos, Nigeria",1
+bac88b68-1e4a-4f54-b163-89d60e128868,2025-07-21 23:48:15,31.66,Debit,Moscow Bazaar,"Lagos, Nigeria","San Francisco, USA",0
+139b565a-3314-40e9-953b-98b0ae2d0385,2025-07-29 23:48:15,176.46,Credit,CVS Pharmacy,"Toronto, Canada","London, UK",0
+07d1fe59-1d4a-4e6b-b870-f6da72f1433f,2025-07-12 23:48:15,44.12,Debit,Virtual Books,"New York, USA","New York, USA",0
+c5a87bef-4366-45d1-af12-59751fb03449,2025-07-29 23:48:15,32.98,Virtual,Facebook Marketplace,"Austin, USA","London, UK",0
+b4378899-4aa2-4c34-a4c5-f47e489c6e4c,2025-07-03 23:48:15,5380.14,Credit,Kirlin Electronics,"Toronto, Canada","San Francisco, USA",1
+3f531375-e59d-46f2-9713-8a1e0f0a89d1,2025-07-23 23:48:15,15.19,Debit,Costco,"Chicago, USA","New York, USA",0
+4a6ea0c7-197c-470e-98be-bebaab2616ac,2025-07-28 23:48:15,162.05,Virtual,H&M,"Chicago, USA","New York, USA",0
+dd7add66-79f3-49c0-9e6f-e50235148134,2025-07-14 23:48:15,7.75,Virtual,Spotify,"Chicago, USA","London, UK",0
+61a85001-86e9-4564-8162-c8531fa0f91b,2025-07-23 23:48:15,433.41,Debit,Uber,"Mumbai, India","San Francisco, USA",0
+9e5f316f-fe96-48ef-8b7d-4a0c37df6281,2025-07-16 23:48:15,147.95,Debit,Shell Gas,"London, UK","San Francisco, USA",1
+3560b16f-410e-4fde-88b9-d50451d30e2c,2025-07-11 23:48:15,22.15,Credit,Uber,"Tokyo, Japan","New York, USA",0
+48fc3723-457e-4dc8-bab3-0a2b94255591,2025-07-24 23:48:15,0.55,Credit,H&M,"Toronto, Canada","New York, USA",0
+0f4383a4-6ce3-4847-92d3-01e69f738a02,2025-07-02 23:48:15,168.99,Debit,Kirlin Electronics,"Mumbai, India","San Francisco, USA",0
+35f34d32-5056-4b4d-bc85-57ce42d8c495,2025-07-25 23:48:15,122.71,Credit,Target,"London, UK","Austin, USA",0
+fdcee83a-5836-4dba-9443-03139da85e41,2025-07-14 23:48:15,2500.0,Virtual,Google Ads,"Toronto, Canada","Austin, USA",1
+6add5fe6-96a8-46bc-ac8b-390b63a5eb89,2025-07-01 23:48:15,147.52,Virtual,Amazon,"London, UK","London, UK",0
+914252f4-52ca-4f52-88f6-d9b25783182b,2025-07-27 23:48:15,7.69,Credit,MumbaiMobile,"London, UK","San Francisco, USA",0
+f269dbb0-79c5-4c9f-a915-46d0860ac926,2025-07-22 23:48:15,44.39,Virtual,BestBuy,"Austin, USA","London, UK",0
+68e2494a-c627-4ce6-9c20-4d76bd557adb,2025-07-24 23:48:15,12.32,Virtual,Delta Airlines,"Mumbai, India","San Francisco, USA",0
+a2ac324a-0580-4442-811c-6ac4f4322e30,2025-07-02 23:48:15,4954.13,Virtual,MumbaiMobile,"Toronto, Canada","Austin, USA",1
+d4e509fd-d5c7-41d8-b41e-5633061fb78c,2025-07-29 23:48:15,97.63,Credit,Walmart,"London, UK","Lagos, Nigeria",0
+044f9cc2-e0c7-4386-bbb4-f2038de00d5a,2025-07-25 23:48:15,40.18,Debit,Amazon,"London, UK","San Francisco, USA",0
+41f05b2d-c94c-4f40-9875-caf800e960d3,2025-07-13 23:48:15,6.57,Debit,Virtual Books,"Berlin, Germany","London, UK",0
+09710c34-0127-438d-b3b5-6767b07ae7c4,2025-07-13 23:48:15,37.25,Credit,Amazon,"Austin, USA","New York, USA",0
+cf92b61d-b351-4051-9cb1-ee7f6bd2b21d,2025-07-26 23:48:15,39.33,Debit,Walmart,"Toronto, Canada","London, UK",1
+65d31d4f-8ad3-49b2-8266-1ea8cbfa3fe3,2025-07-19 23:48:15,130.79,Credit,Spotify,"London, UK","New York, USA",0
+d3f42aa6-1585-4ac3-a709-dc9488f997b5,2025-07-09 23:48:15,101.49,Debit,Walmart,"Lagos, Nigeria","San Francisco, USA",0
+ed29c827-1d12-44c3-b314-7061aa3b7ae6,2025-07-11 23:48:15,218.23,Debit,BestBuy,"Berlin, Germany","London, UK",0
+ac743bdb-0aae-4882-b27f-8e586f03d201,2025-07-05 23:48:15,63.91,Credit,Virtual Books,"Austin, USA","San Francisco, USA",0
+fec3124d-3d70-42f1-a59d-894c9baaf12e,2025-07-01 23:48:15,12.74,Debit,Apple Store,"Toronto, Canada","New York, USA",1
+8c8d2dac-b629-44f0-b059-91631dec7a8a,2025-07-25 23:48:15,124.91,Debit,Uber,"London, UK","San Francisco, USA",0
+e9227dca-b788-467a-b2a3-85f637c22345,2025-07-03 23:48:15,143.04,Credit,Moscow Bazaar,"New York, USA","Lagos, Nigeria",0
+83c6768a-2cd4-41e6-9210-66c97392edae,2025-07-19 23:48:15,82.39,Credit,Facebook Marketplace,"Tokyo, Japan","San Francisco, USA",0
+29392243-33a1-4bb6-a224-136438fcd915,2025-07-09 23:48:15,147.39,Credit,Delta Airlines,"New York, USA","San Francisco, USA",0
+2f40d524-0e01-4585-aa21-3fb96d2e2d02,2025-07-03 23:48:15,68.08,Debit,CVS Pharmacy,"London, UK","Austin, USA",1
+0792bb8e-39d4-4908-b150-d060462feb3c,2025-07-18 23:48:15,73.97,Debit,Target,"Toronto, Canada","Austin, USA",0
+82b90342-8ebe-49fd-88b9-a00a12c0b6c1,2025-07-27 23:48:15,55.78,Virtual,MumbaiMobile,"New York, USA","Austin, USA",0
+51e1919f-5f08-4b59-a3c0-21f7d1993e28,2025-07-29 23:48:15,2.57,Credit,Shell Gas,"London, UK","London, UK",0
+13433d97-89d0-4bf7-b4e6-1ac7b21019f9,2025-07-07 23:48:15,11.42,Virtual,BestBuy,"Mumbai, India","Lagos, Nigeria",0
+41b7bdca-0cfa-4f29-8468-21c992201e58,2025-07-27 23:48:15,3.19,Debit,Uber,"Toronto, Canada","London, UK",1
+94008dba-eb76-4ef1-ba44-4034ef3fb845,2025-07-29 23:48:15,101.17,Virtual,Netflix,"London, UK","San Francisco, USA",0
+29ebbb47-909f-40d4-8da8-23010637013f,2025-07-01 23:48:15,37.74,Debit,Moscow Bazaar,"Toronto, Canada","New York, USA",0
+00f120d6-49a3-469f-8f27-d121a2ba7727,2025-07-17 23:48:15,71.04,Virtual,Zara,"Mumbai, India","San Francisco, USA",0
+9644df4f-5470-41ea-b7df-cec4c8204a17,2025-07-20 23:48:15,238.13,Virtual,Target,"Chicago, USA","Austin, USA",0
+9b164432-d41c-4f55-961e-54970623a3b9,2025-07-17 23:48:15,4237.14,Credit,MumbaiMobile,"Toronto, Canada","Austin, USA",1
+47ab1a2d-08a5-460a-a63c-9bfc31b8f057,2025-07-26 23:48:15,52.83,Debit,Uber,"Toronto, Canada","Austin, USA",0
+1686bb2a-be6c-43c5-9942-cedb0cf1c9d7,2025-07-11 23:48:15,140.87,Debit,CVS Pharmacy,"Austin, USA","Lagos, Nigeria",0
+928d4f29-4f67-450e-a5fa-86daaed27330,2025-07-04 23:48:15,25.98,Debit,H&M,"Toronto, Canada","Lagos, Nigeria",0
+092358c6-ca09-41ba-ab1d-b1130f6ec456,2025-07-17 23:48:15,8.01,Debit,Amazon,"Lagos, Nigeria","Austin, USA",0
+1bf39637-cd67-441f-b4d2-1e000906ad30,2025-07-16 23:48:15,2500.0,Virtual,H&M,"Tokyo, Japan","Austin, USA",1
+b1208b6d-cb30-40c0-811c-8cdf56fcd056,2025-07-15 23:48:15,17.58,Virtual,Google Ads,"Toronto, Canada","San Francisco, USA",0
+87ab1218-e137-4320-b14f-6e80bd769215,2025-07-14 23:48:15,265.5,Credit,Virtual Books,"London, UK","New York, USA",0
+94052357-89d1-4df9-980a-1d8baef70c13,2025-07-28 23:48:15,165.09,Virtual,MumbaiMobile,"Mumbai, India","London, UK",0
+2857ccd8-52b4-4e20-abce-1e030edd7558,2025-07-05 23:48:15,100.35,Credit,GameZone,"Lagos, Nigeria","Austin, USA",0
+ca3b1a79-39be-46ae-af91-5e8a1c0a6d9a,2025-07-15 23:48:15,205.15,Credit,CVS Pharmacy,"London, UK","New York, USA",1
+e7811b03-47fa-4b93-96e5-0245ece3bdc6,2025-07-02 23:48:15,162.8,Credit,AliExpress,"Berlin, Germany","Lagos, Nigeria",0
+53ce9110-62c3-4dfa-a62f-ba593ac3cdfa,2025-07-15 23:48:15,20.65,Virtual,LagosTech Hub,"Berlin, Germany","San Francisco, USA",0
+265b9c9a-e97c-420b-a3aa-ba571cc0725f,2025-07-02 23:48:15,223.08,Credit,Netflix,"New York, USA","San Francisco, USA",0
+53887eab-2be6-4ca5-b080-431455345189,2025-07-25 23:48:15,77.51,Credit,GameZone,"Lagos, Nigeria","Lagos, Nigeria",0
+efc6d6fe-b6ac-477f-9e9d-68f1ace12134,2025-07-01 23:48:15,5229.62,Virtual,Moscow Bazaar,"New York, USA","Lagos, Nigeria",1
+6beb26f3-1fb5-4b86-8dda-d0924e9f5b7f,2025-07-09 23:48:15,226.42,Debit,BestBuy,"Tokyo, Japan","San Francisco, USA",0
+061b255e-14fd-402b-95fb-0ba061985079,2025-06-30 23:48:15,38.27,Virtual,Kirlin Electronics,"Mumbai, India","London, UK",0
+df26bb84-5b6e-410e-9932-294478d990ef,2025-07-17 23:48:15,11.66,Debit,GameZone,"Toronto, Canada","London, UK",0
+9986ef90-de14-429c-93eb-2a34cc85c478,2025-07-16 23:48:15,25.87,Debit,Zara,"Tokyo, Japan","San Francisco, USA",0
+b047d056-a3a1-4336-9398-ffe2cbddbe4b,2025-07-15 23:48:15,55.71,Credit,Shell Gas,"Toronto, Canada","Austin, USA",1
+d2625d84-789f-4bdf-b126-8682584fde38,2025-07-28 23:48:15,170.38,Credit,LagosTech Hub,"Tokyo, Japan","Austin, USA",0
+c691279d-c3ed-4431-9502-d445505c080a,2025-07-20 23:48:15,197.13,Debit,Moscow Bazaar,"London, UK","San Francisco, USA",0
+b5319a2b-322e-4036-b26e-d39f5129115d,2025-07-26 23:48:15,0.7,Virtual,Uber,"Austin, USA","New York, USA",0
+a33c4834-1ffa-423f-89f8-5f7f2d818773,2025-07-28 23:48:15,71.49,Debit,Costco,"Lagos, Nigeria","San Francisco, USA",0
+d06e571f-98f7-4481-ad68-74b546356eb5,2025-07-16 23:48:15,54.03,Debit,Spotify,"Toronto, Canada","Austin, USA",1
+3512466e-169b-449b-85ea-e78ffebf2f03,2025-07-18 23:48:15,25.12,Credit,Spotify,"Berlin, Germany","San Francisco, USA",0
+c288f035-67a5-4472-a1fd-3b378d280d60,2025-07-18 23:48:15,12.77,Virtual,GameZone,"Chicago, USA","New York, USA",0
+7a27aaa3-864c-4f45-a183-c96f5e923a09,2025-07-06 23:48:15,41.19,Credit,Facebook Marketplace,"London, UK","Austin, USA",0
+7bfabb93-a87a-4806-bdc2-9b942f385c02,2025-07-05 23:48:15,286.31,Debit,Netflix,"Toronto, Canada","London, UK",0
+44fcad7b-1939-4d18-a0cb-a9daecdc5085,2025-07-30 23:48:15,4091.74,Credit,AliExpress,"Toronto, Canada","Lagos, Nigeria",1
+e15a9384-0bd1-4050-9d62-b9f80efed402,2025-07-04 23:48:15,73.15,Debit,Netflix,"Austin, USA","Lagos, Nigeria",0
+07eaab0a-ff9e-4af0-92d9-a1b6038bb8c0,2025-07-30 23:48:15,121.41,Credit,Google Ads,"Toronto, Canada","London, UK",0
+382e64d0-d400-4a06-97c5-b49ed95674f1,2025-07-28 23:48:15,45.2,Virtual,Netflix,"New York, USA","London, UK",0
+d2a5ccd5-f7c2-4878-b24e-c124712f13e1,2025-07-25 23:48:15,356.78,Debit,LagosTech Hub,"Tokyo, Japan","San Francisco, USA",0
+b1ada3bb-c352-435d-b9ec-380d4c8cfb74,2025-07-24 23:48:15,328.2,Debit,Walmart,"Mumbai, India","Lagos, Nigeria",1
+08054100-00b7-474c-be0b-c69ed86573d4,2025-07-22 23:48:15,29.01,Debit,Google Ads,"Berlin, Germany","Austin, USA",0
+8f6470c8-e99a-4984-8bf4-11081142702c,2025-07-15 23:48:15,68.77,Debit,GameZone,"San Francisco, USA","Austin, USA",0
+01fe4bf7-6f1b-4fec-bac8-db9cfdebcc10,2025-06-30 23:48:15,35.79,Virtual,Amazon,"New York, USA","London, UK",0
+ac9c4c83-336c-4255-b6ea-78612dc1ea3c,2025-07-06 23:48:15,33.52,Credit,Lyft,"New York, USA","New York, USA",0
+722f8066-2805-445b-a475-ac937af60464,2025-07-26 23:48:15,3.76,Credit,Amazon,"Tokyo, Japan","San Francisco, USA",1
+34cfaf41-b6c4-456e-ba00-3df0cd9f9edd,2025-07-12 23:48:15,94.05,Credit,Costco,"San Francisco, USA","Lagos, Nigeria",0
+f149b50a-5191-4b8a-aa37-f62740c789e7,2025-07-25 23:48:15,69.85,Debit,CVS Pharmacy,"Mumbai, India","Austin, USA",0
+038a69aa-0761-4791-b29b-0f7c1d92ad1e,2025-06-30 23:48:15,5.29,Virtual,AliExpress,"Austin, USA","New York, USA",0
+c8dae254-5318-4fa0-a9b3-bdb92882f109,2025-07-01 23:48:15,32.66,Credit,Delta Airlines,"New York, USA","London, UK",0
+f8a0bcee-7957-4cdd-b4ec-89fef179637e,2025-06-30 23:48:15,2500.0,Virtual,Delta Airlines,"Berlin, Germany","Lagos, Nigeria",1
+a9dcd4b9-191d-4ec1-abe7-b2a406f5bca5,2025-07-08 23:48:15,27.39,Credit,Moscow Bazaar,"Chicago, USA","New York, USA",0
+4e85db67-1a38-468c-9afa-8fb04dc58f1a,2025-07-03 23:48:15,15.65,Credit,LagosTech Hub,"London, UK","New York, USA",0
+f317e392-8952-4a23-822e-5c0d23d7887c,2025-07-05 23:48:15,67.23,Virtual,MumbaiMobile,"Chicago, USA","New York, USA",0
+2289c655-509a-4624-a894-8f2a508257b9,2025-07-09 23:48:15,424.4,Debit,Walmart,"Berlin, Germany","London, UK",0
+33d4ecef-4cb6-466d-8c4f-85c43ea887f2,2025-07-30 23:48:15,27.71,Credit,Lyft,"Mumbai, India","London, UK",1
+c7e32d10-1998-48b3-8e49-1585a2e38d5e,2025-06-30 23:48:15,111.52,Debit,Spotify,"Berlin, Germany","New York, USA",0
+53c3442d-ceb7-4214-b473-0343f3b4b0e0,2025-07-17 23:48:15,143.39,Virtual,Lyft,"Austin, USA","Lagos, Nigeria",0
+a31ae1bb-8bae-43cb-a42b-8a99e3d89fb2,2025-07-11 23:48:15,27.13,Virtual,Apple Store,"London, UK","London, UK",0
+498aa9ac-7950-49ba-b54d-d98e3b8bcc1a,2025-07-04 23:48:15,130.27,Debit,Zara,"Berlin, Germany","Lagos, Nigeria",0
+102463e6-48fd-40ee-a243-d01f76f3b51f,2025-07-03 23:48:15,2500.0,Virtual,Virtual Books,"Mumbai, India","Austin, USA",1
+f5659cb0-2434-46af-816e-6e5e91118dbb,2025-07-23 23:48:15,100.05,Credit,Costco,"Tokyo, Japan","Austin, USA",0
+496b3135-77f7-4396-a818-a4e498826ef8,2025-07-09 23:48:15,100.38,Debit,GameZone,"Chicago, USA","London, UK",0
+f6752114-3b56-4c35-9fe7-1052df00e43d,2025-07-03 23:48:15,76.74,Debit,Netflix,"Tokyo, Japan","New York, USA",0
+d99a78ba-5050-40f9-bb40-73b77321c2f9,2025-07-19 23:48:15,9.46,Credit,Uber,"Lagos, Nigeria","Lagos, Nigeria",0
+ad443930-c24e-41dd-bb8e-ea41d4997901,2025-07-02 23:48:15,180.36,Debit,Shell Gas,"Toronto, Canada","Austin, USA",1
+e2a36162-06a9-4cac-98b4-cdd97f5111ad,2025-06-30 23:48:15,38.68,Virtual,Shell Gas,"Toronto, Canada","New York, USA",0
+869bb307-0212-4978-b552-f1721987372d,2025-07-15 23:48:15,20.64,Credit,CVS Pharmacy,"Berlin, Germany","San Francisco, USA",0
+efb59259-ddb1-4796-bfbf-26bd1398ca3b,2025-07-16 23:48:15,4.16,Credit,Zara,"Tokyo, Japan","Lagos, Nigeria",0
+01cac7cc-0c02-4909-baa8-ffb0106a394a,2025-07-18 23:48:15,89.38,Credit,Amazon,"Lagos, Nigeria","Austin, USA",0
+cf77c202-40f3-4a69-b95b-7556671ad659,2025-07-14 23:48:15,4476.08,Credit,Moscow Bazaar,"Tokyo, Japan","Austin, USA",1
+0c141bf7-1322-477c-984a-f80dbdc0c7a2,2025-07-19 23:48:15,1.67,Debit,Lyft,"Mumbai, India","London, UK",0
+4dc67cfb-3334-4bca-9244-eecc6488beb8,2025-07-22 23:48:15,71.76,Debit,Moscow Bazaar,"London, UK","Austin, USA",0
+8c313910-b2cb-4b9e-a8bc-e3089b15348d,2025-07-27 23:48:15,25.68,Credit,Costco,"Mumbai, India","San Francisco, USA",0
+051e2002-be84-4ba4-abdb-121fc2abac77,2025-07-24 23:48:15,103.61,Virtual,Virtual Books,"Lagos, Nigeria","San Francisco, USA",0
+eeedf5ac-6304-4c62-8f64-8f1626a37d71,2025-07-11 23:48:15,19.16,Debit,Virtual Books,"Tokyo, Japan","Austin, USA",1
+8592c22d-8588-49c3-8c05-ed3dfc7e5015,2025-07-23 23:48:15,117.42,Credit,Delta Airlines,"London, UK","San Francisco, USA",0
+092c0a4b-6daa-492e-98fb-ade9d10b1fe1,2025-07-08 23:48:15,48.9,Credit,Lyft,"New York, USA","Austin, USA",0
+09e349b5-13d0-44c4-a857-819b77e5d4e4,2025-07-29 23:48:15,276.03,Credit,Zara,"New York, USA","Austin, USA",0
+e427dd27-1f83-485a-aa10-e8f5688aa673,2025-07-27 23:48:15,14.79,Debit,Zara,"Tokyo, Japan","San Francisco, USA",0
+dec99590-5cb0-4fa8-85ad-90f52468f474,2025-07-15 23:48:15,2500.0,Virtual,Amazon,"Tokyo, Japan","Austin, USA",1
+71d56576-1129-4bc6-ad74-69075a6a9b42,2025-07-22 23:48:15,12.04,Debit,Google Ads,"New York, USA","San Francisco, USA",0
+023fb333-ff4a-44bb-b99b-a6c2674c0c27,2025-07-15 23:48:15,258.62,Credit,Facebook Marketplace,"Berlin, Germany","New York, USA",0
+72627c39-95fc-44f2-b18c-57da475bff34,2025-07-26 23:48:15,209.83,Virtual,Target,"Austin, USA","New York, USA",0
+5b98bffc-7f22-4dd9-adc7-690be393995f,2025-07-27 23:48:15,29.83,Debit,H&M,"Lagos, Nigeria","New York, USA",0
+be10feb6-90f0-4397-8614-b8816bfc2379,2025-07-05 23:48:15,107.88,Debit,Zara,"Chicago, USA","London, UK",1
+bf36c618-da0f-4a5b-9b5d-d789673d830b,2025-07-16 23:48:15,169.95,Credit,AliExpress,"Berlin, Germany","London, UK",0
+6a84266f-4ab9-4bca-8ee3-d538b90d50f2,2025-07-21 23:48:15,81.01,Debit,Google Ads,"Berlin, Germany","London, UK",0
+52c584b4-9dc5-48e6-9cb2-3ef205606130,2025-06-30 23:48:15,75.43,Virtual,H&M,"Chicago, USA","New York, USA",0
+ffb6dfac-2c66-45a2-b07a-97bb8abdfa75,2025-07-22 23:48:15,27.69,Credit,Virtual Books,"Lagos, Nigeria","San Francisco, USA",0
+481e3ca9-46a3-4e68-b6a3-880c2f169acf,2025-07-28 23:48:15,3695.25,Credit,MumbaiMobile,"Lagos, Nigeria","San Francisco, USA",1
+59967507-7a0d-4b14-8f87-19ae6399aaa9,2025-07-08 23:48:15,227.51,Credit,Apple Store,"Tokyo, Japan","Lagos, Nigeria",0
+8d2683aa-ed30-450b-8c38-a38105ba5b8d,2025-07-23 23:48:15,230.68,Debit,AliExpress,"New York, USA","Austin, USA",0
+7ec6af36-f22d-42ae-a9fd-4a725b618c92,2025-07-28 23:48:15,100.27,Virtual,Delta Airlines,"Tokyo, Japan","Austin, USA",0
+944edf0e-45d1-444d-bccf-14ebb5fb9b0d,2025-07-09 23:48:15,41.4,Credit,MumbaiMobile,"Chicago, USA","Austin, USA",0
+9790c1ea-5fa3-49fb-84e0-279297078686,2025-07-23 23:48:15,42.96,Debit,CVS Pharmacy,"Toronto, Canada","New York, USA",1
+a80b6a26-4cf8-4899-9e35-4f740397a4be,2025-07-28 23:48:15,129.45,Credit,LagosTech Hub,"Austin, USA","Austin, USA",0
+b69109d0-e234-4677-9c2d-8f6f97cf0d33,2025-07-07 23:48:15,227.41,Credit,Walmart,"Chicago, USA","Austin, USA",0
+9a848e8f-ef1c-4490-8346-22369a929023,2025-07-16 23:48:15,218.11,Debit,H&M,"San Francisco, USA","Lagos, Nigeria",0
+2cc0613a-a55f-444d-b080-dbb9c07b653b,2025-07-14 23:48:15,151.36,Debit,Moscow Bazaar,"London, UK","Lagos, Nigeria",0
+7ead416f-7fc2-4570-b166-d4f403696439,2025-07-11 23:48:15,102.73,Debit,Zara,"San Francisco, USA","Lagos, Nigeria",1
+e1fc7096-1601-4f43-b9c2-252db1a53a49,2025-07-22 23:48:15,8.79,Debit,Walmart,"Chicago, USA","Austin, USA",0
+25a181a8-7df3-41a2-bb16-ca866b8a7fe7,2025-07-12 23:48:15,17.63,Credit,Amazon,"Chicago, USA","San Francisco, USA",0
+16377419-bb2a-4525-b04e-234f77f108e8,2025-07-29 23:48:15,228.82,Virtual,Amazon,"Chicago, USA","Austin, USA",0
+00457d21-4c7d-49b7-af9c-7e233ee25255,2025-07-10 23:48:15,93.25,Credit,GameZone,"Toronto, Canada","Lagos, Nigeria",0
+477d663d-cb3e-4b5c-a6a3-54e77a06cd15,2025-07-10 23:48:15,0.92,Debit,Google Ads,"Berlin, Germany","San Francisco, USA",1
+ade3d64b-3797-4b0e-9e52-9a1459dd133b,2025-07-17 23:48:15,10.7,Credit,Facebook Marketplace,"Mumbai, India","Lagos, Nigeria",0
+4aa82219-aa51-403d-b5d1-2d604d2bc873,2025-07-20 23:48:15,108.92,Debit,Uber,"Austin, USA","New York, USA",0
+de523d0e-ece5-4771-afa5-6b07a5010216,2025-07-09 23:48:15,0.51,Virtual,Spotify,"London, UK","Lagos, Nigeria",0
+e10c5862-6f3d-46a7-8499-1d614c66c940,2025-07-28 23:48:15,17.53,Virtual,Netflix,"Tokyo, Japan","New York, USA",0
+37542021-cad4-439f-ab59-c109f7d48ad0,2025-07-03 23:48:15,79.57,Debit,Uber,"Berlin, Germany","Austin, USA",1
+663cd8ae-a387-4365-9959-9bd298b3a4cf,2025-07-17 23:48:15,117.73,Credit,Kirlin Electronics,"Tokyo, Japan","London, UK",0
+aade7590-22a5-4f39-9bc7-c7e62caf21d9,2025-07-11 23:48:15,105.54,Credit,Walmart,"Mumbai, India","London, UK",0
+4aecbfda-85b5-41ef-9c45-0021e81c0251,2025-07-24 23:48:15,25.39,Debit,GameZone,"New York, USA","Lagos, Nigeria",0
+73b4e71d-3a6f-4f79-86b0-05e089f06d87,2025-07-16 23:48:15,124.54,Virtual,Shell Gas,"London, UK","San Francisco, USA",0
+9ce2df50-3b74-4fef-bf20-c2633a70b29c,2025-07-05 23:48:15,6892.59,Debit,Moscow Bazaar,"Tokyo, Japan","New York, USA",1
+d3af0388-c8da-49ed-aa24-7906c5f4680c,2025-07-13 23:48:15,39.36,Virtual,Costco,"London, UK","San Francisco, USA",0
+bab14909-e8c3-4851-98b4-6e4a0ae3e9dc,2025-07-23 23:48:15,137.24,Virtual,Amazon,"San Francisco, USA","Lagos, Nigeria",0
+416efec1-e5b2-4a79-ab50-1780c1e5a655,2025-07-15 23:48:15,104.88,Debit,BestBuy,"Austin, USA","New York, USA",0
+83df5cf9-17d8-4462-ab2d-67d2cd062983,2025-07-17 23:48:15,189.2,Debit,Moscow Bazaar,"London, UK","London, UK",0
+f8306a68-2b42-43f4-8734-3edb0181f842,2025-07-13 23:48:15,107.18,Debit,Facebook Marketplace,"Tokyo, Japan","San Francisco, USA",1
+bfce62db-9ff5-4dee-a906-6f8dc4c0e8ba,2025-07-14 23:48:15,84.0,Debit,Starbucks,"Chicago, USA","San Francisco, USA",0
+e6184f58-e03c-4728-91b3-a01c13731f12,2025-07-06 23:48:15,9.84,Credit,Virtual Books,"London, UK","New York, USA",0
+08697969-0932-4eba-a7a6-e9b346b83621,2025-07-04 23:48:15,45.84,Debit,Spotify,"London, UK","London, UK",0
+b2a6e2c8-e7c0-49a9-bf77-89271f628f3b,2025-07-12 23:48:15,30.82,Debit,Amazon,"Chicago, USA","Austin, USA",0
+1dd0f037-bc54-4769-a877-d71d8a3aeec4,2025-07-19 23:48:15,5154.32,Debit,MumbaiMobile,"Tokyo, Japan","San Francisco, USA",1
+94f761f8-c885-429e-be09-9046efeaf2b3,2025-07-16 23:48:15,361.23,Virtual,Uber,"Berlin, Germany","London, UK",0
+3000cb8a-c6e2-4c18-959e-97b5d6adfdec,2025-07-18 23:48:15,49.94,Credit,Uber,"Chicago, USA","San Francisco, USA",0
+ad3abcdf-5170-4f65-bf3d-2ca9e00db38f,2025-07-07 23:48:15,222.61,Debit,Costco,"Mumbai, India","New York, USA",0
+f85ff2cc-e7af-4f40-91de-7c6c17d6b86e,2025-07-09 23:48:15,99.73,Virtual,Facebook Marketplace,"Berlin, Germany","Lagos, Nigeria",0
+cf68bad0-a9a0-4e64-a3c2-2b3b0d0c29b1,2025-06-30 23:48:15,3504.99,Credit,LagosTech Hub,"New York, USA","Lagos, Nigeria",1
+45728de1-c305-4585-bfea-07de139fc636,2025-07-27 23:48:15,69.84,Debit,H&M,"Tokyo, Japan","New York, USA",0
+16ac826e-05fa-4344-9253-2fc6a0d14612,2025-07-17 23:48:15,86.02,Debit,Kirlin Electronics,"Austin, USA","New York, USA",0
+d1baf54c-eec8-4234-8ae6-d64ef53a0431,2025-07-05 23:48:15,67.83,Credit,LagosTech Hub,"Tokyo, Japan","New York, USA",0
+53d9b09d-178f-4116-ad32-3aae42b6169b,2025-07-10 23:48:15,21.72,Debit,Shell Gas,"Berlin, Germany","London, UK",0
+d3533749-9806-42f7-9b06-29560709f328,2025-06-30 23:48:15,128.18,Debit,Target,"Berlin, Germany","London, UK",1
+958a727d-30d3-4768-9596-5c93fccbfa71,2025-07-29 23:48:15,32.96,Virtual,Uber,"Toronto, Canada","Lagos, Nigeria",0
+3b3b5f65-52ce-4b2e-b49e-b02258c72728,2025-07-23 23:48:15,2.46,Credit,AliExpress,"London, UK","San Francisco, USA",0
+ad02146c-d0b3-4bad-acc5-b9216b805bf7,2025-07-06 23:48:15,103.7,Credit,Virtual Books,"San Francisco, USA","Lagos, Nigeria",0
+defb6e8e-9aab-4115-960f-94f381a9e644,2025-07-25 23:48:15,19.49,Virtual,LagosTech Hub,"Tokyo, Japan","New York, USA",0
+a204da08-65e3-4db3-82a2-60c6007acd69,2025-07-21 23:48:15,4297.5,Debit,Moscow Bazaar,"Lagos, Nigeria","New York, USA",1
+b26af7a0-36c1-49db-909f-a1c81c904ae2,2025-07-23 23:48:15,307.76,Debit,Lyft,"Austin, USA","Lagos, Nigeria",0
+af6e1b46-2086-4acd-9c5e-b6b197fcff9c,2025-07-25 23:48:15,246.35,Debit,Kirlin Electronics,"Austin, USA","London, UK",0
+e88e7336-4385-4e99-9bcb-46e7e9936b32,2025-07-11 23:48:15,46.23,Credit,Apple Store,"Berlin, Germany","London, UK",0
+432ced5a-17f5-49d2-b2ce-91158286b359,2025-07-26 23:48:15,1.56,Credit,MumbaiMobile,"Chicago, USA","Lagos, Nigeria",0
+048912a6-9f89-4fb6-bc5c-fa0f7fed58f4,2025-07-22 23:48:15,263.55,Debit,Costco,"Tokyo, Japan","Austin, USA",1
+c9b3a136-33c7-4522-8a1a-3b4d94652f7e,2025-07-09 23:48:15,55.89,Credit,MumbaiMobile,"London, UK","Lagos, Nigeria",0
+4ef81a6c-1c41-4aa5-9d66-d32ec4e3ff78,2025-06-30 23:48:15,340.08,Credit,Zara,"Tokyo, Japan","New York, USA",0
+a0085122-ea70-4f38-891d-a9fc364731c6,2025-07-08 23:48:15,331.37,Virtual,Lyft,"Berlin, Germany","Austin, USA",0
+f1fe9fdb-cd52-48a7-9bfe-4d1ada1f0cff,2025-07-18 23:48:15,191.74,Debit,Shell Gas,"Lagos, Nigeria","Austin, USA",0
+131d087c-7240-4b0d-a660-0d1b9ced9596,2025-07-12 23:48:15,34.88,Credit,Facebook Marketplace,"Berlin, Germany","San Francisco, USA",1
+71a0f9f0-2991-4b3a-8f3a-3bbdfca4a4a8,2025-07-30 23:48:15,48.63,Virtual,Lyft,"London, UK","Austin, USA",0
+9a80a822-50ed-4621-b721-c6566d6c58e3,2025-07-12 23:48:15,190.47,Debit,MumbaiMobile,"New York, USA","Austin, USA",0
+ebcfd155-87bc-4023-a4ed-270efd5b3c76,2025-07-07 23:48:15,38.11,Virtual,MumbaiMobile,"Chicago, USA","New York, USA",0
+b2755c56-4a6e-4f70-a8dc-18859ca0af5a,2025-07-05 23:48:15,18.57,Debit,Facebook Marketplace,"Chicago, USA","San Francisco, USA",0
+64e143d7-42c0-4bd7-aa4e-8c6f537443df,2025-07-09 23:48:15,81.37,Credit,Lyft,"Mumbai, India","San Francisco, USA",1
+fcaed08a-7d1a-4d15-9a2f-d54081c39d94,2025-07-02 23:48:15,275.13,Virtual,GameZone,"San Francisco, USA","San Francisco, USA",0
+5353ae36-ed33-4d41-8428-54a9ff4f9004,2025-07-05 23:48:15,119.08,Virtual,LagosTech Hub,"London, UK","New York, USA",0
+c2c54431-140e-4d71-8c5a-c5b09a5b389a,2025-07-07 23:48:15,84.41,Credit,Google Ads,"Mumbai, India","London, UK",0
+137f5d07-0247-4e3e-8cf0-d275a3fd464a,2025-07-07 23:48:15,10.22,Credit,Starbucks,"Mumbai, India","Austin, USA",0
+8c87fcc0-166a-45cf-856d-53b480bca800,2025-07-02 23:48:15,95.45,Credit,Spotify,"Tokyo, Japan","San Francisco, USA",1
+b11aa31a-cc88-4b0e-8a9c-ddf2236eebc1,2025-07-04 23:48:15,461.06,Virtual,Lyft,"London, UK","London, UK",0
+c2ff6f41-419c-4725-a8d7-565bcfab7863,2025-07-07 23:48:15,15.09,Debit,Apple Store,"London, UK","Lagos, Nigeria",0
+0129159e-8edf-42b1-a2c1-e11d38a5cf00,2025-07-26 23:48:15,73.05,Credit,Uber,"San Francisco, USA","Lagos, Nigeria",0
+06754c35-1669-45e5-ae9a-7e125233f8c1,2025-07-19 23:48:15,209.86,Credit,GameZone,"Toronto, Canada","Lagos, Nigeria",0
+213b63ca-39de-42d6-ae44-dd7c3fcdc9b3,2025-07-13 23:48:15,135.0,Debit,Target,"London, UK","New York, USA",1
+e6b261a8-9ef9-4d63-90e4-dfc3285aeaca,2025-07-12 23:48:15,119.41,Debit,BestBuy,"London, UK","Austin, USA",0
+7267cb7e-d179-4d47-ad48-cda39edb6cb3,2025-07-09 23:48:15,121.23,Virtual,Netflix,"San Francisco, USA","Austin, USA",0
+e8aa61a3-79d5-40f8-8afc-592fabe17eed,2025-07-02 23:48:15,44.55,Debit,Costco,"Chicago, USA","New York, USA",0
+a6536d51-8dc5-4526-b552-bd888ee5db7c,2025-07-10 23:48:15,34.76,Debit,Zara,"Lagos, Nigeria","London, UK",0
+4d7cd01a-a114-49b0-879c-2ef3b820de98,2025-07-10 23:48:15,2500.0,Virtual,Target,"London, UK","Lagos, Nigeria",1
+8456f265-11db-467f-9fe2-5e14358ed0fa,2025-06-30 23:48:15,166.13,Credit,Spotify,"New York, USA","San Francisco, USA",0
+3eb6882b-f5be-4129-aa06-a7660e1440fa,2025-07-27 23:48:15,201.8,Debit,Walmart,"San Francisco, USA","Lagos, Nigeria",0
+96117e0d-1e88-4d42-b29b-711a935e470e,2025-07-16 23:48:15,244.46,Virtual,Costco,"Berlin, Germany","San Francisco, USA",0
+c6888184-bd08-4cd5-b0b0-9f79fb350d07,2025-07-12 23:48:15,71.61,Virtual,Lyft,"Berlin, Germany","London, UK",0
+257dd640-f1cd-4fe2-9a0a-e1b65b112d74,2025-07-10 23:48:15,2500.0,Virtual,Virtual Books,"Berlin, Germany","San Francisco, USA",1
+36cbe556-69c3-449c-a35d-d8ce07f5ff22,2025-06-30 23:48:15,160.09,Debit,BestBuy,"Berlin, Germany","London, UK",0
+98f103c7-c002-485c-9143-7c7466422502,2025-07-16 23:48:15,104.97,Credit,Shell Gas,"Lagos, Nigeria","Austin, USA",0
+04384e88-705b-4ad5-a2bb-cb1491f50ae7,2025-07-09 23:48:15,121.06,Credit,Google Ads,"San Francisco, USA","Austin, USA",0
+85306e5b-a6b2-4fbf-80af-b256e343b6c1,2025-07-18 23:48:15,158.86,Virtual,Lyft,"New York, USA","Austin, USA",0
+cff168e6-e980-4671-b8a5-76288237575e,2025-07-28 23:48:15,220.73,Credit,Shell Gas,"Tokyo, Japan","New York, USA",1
+062d1a15-81b5-4f04-ab80-64319d7ba246,2025-07-29 23:48:15,41.25,Credit,MumbaiMobile,"New York, USA","London, UK",0
+71005a80-3104-4d7e-aacf-01c745de7d1f,2025-07-24 23:48:15,47.09,Credit,Uber,"Chicago, USA","San Francisco, USA",0
+7c5e0ec2-0b75-43b4-a0bf-49d49d449275,2025-07-24 23:48:15,9.87,Virtual,Target,"Chicago, USA","San Francisco, USA",0
+8b82b43d-5a49-426d-a4e2-03c0d6947f8e,2025-07-30 23:48:15,86.34,Debit,Costco,"Chicago, USA","San Francisco, USA",0
+ceb6ae3f-83fc-4b66-93f7-025e97a7b8e1,2025-07-22 23:48:15,3.66,Credit,Shell Gas,"Toronto, Canada","San Francisco, USA",1
+537f00d9-7acd-4cd9-ad33-cc7fb9394c9b,2025-07-30 23:48:15,62.66,Credit,Apple Store,"Austin, USA","New York, USA",0
+f725d2be-c078-49a2-ac84-6464ae039b62,2025-07-30 23:48:15,78.23,Credit,Lyft,"Mumbai, India","London, UK",0
+1c3e7e22-ecc8-4d38-bb50-18d0c230ae9d,2025-07-07 23:48:15,33.76,Debit,Apple Store,"Austin, USA","New York, USA",0
+91836de3-bee0-43ce-bf4c-ea74b5879a2d,2025-07-15 23:48:15,89.36,Virtual,Spotify,"San Francisco, USA","New York, USA",0
+84f3bda0-bd0b-4abc-bb52-696dedc6b74d,2025-07-27 23:48:15,3.1,Debit,Google Ads,"Chicago, USA","London, UK",1
+3373d01b-e0a6-4d91-b104-182047802f29,2025-07-29 23:48:15,3.81,Virtual,Google Ads,"Chicago, USA","San Francisco, USA",0
+4b6942c8-dec2-4e42-a460-f34485076c1b,2025-07-16 23:48:15,172.94,Virtual,Virtual Books,"London, UK","London, UK",0
+98e3b60a-885d-40a1-82f4-b256c8ee28c8,2025-07-03 23:48:15,44.66,Credit,LagosTech Hub,"Tokyo, Japan","New York, USA",0
+c2eed5cf-500a-433c-b6c0-d417d676d017,2025-07-08 23:48:15,13.59,Debit,Netflix,"Tokyo, Japan","New York, USA",0
+4fb7434a-b83d-4167-a1f6-835904cf80b0,2025-07-11 23:48:15,73.87,Credit,Google Ads,"Mumbai, India","New York, USA",1
+036d1e8c-a623-465f-b23c-a08aeea7c383,2025-07-11 23:48:15,146.96,Credit,Starbucks,"London, UK","San Francisco, USA",0
+b7bc271c-2805-43cb-936f-2cca71bbe34e,2025-07-18 23:48:15,24.31,Virtual,LagosTech Hub,"Mumbai, India","London, UK",0
+98f8dcc4-0cd4-4dfd-83c2-6bb214db9a67,2025-07-14 23:48:15,97.52,Virtual,AliExpress,"Tokyo, Japan","Austin, USA",0
+a4b4d7a4-7920-40a1-a87a-b88b14a3248d,2025-07-03 23:48:15,8.92,Debit,AliExpress,"San Francisco, USA","New York, USA",0
+ad36e9f3-b90d-499d-9863-d9fdf1c0ab07,2025-07-02 23:48:15,4720.28,Virtual,LagosTech Hub,"Lagos, Nigeria","London, UK",1
+c755178a-2e44-4a00-b276-5798348e31b7,2025-07-18 23:48:15,75.79,Debit,Costco,"Tokyo, Japan","Austin, USA",0
+963beb91-ced9-48bd-9bb7-bf3701966caf,2025-07-17 23:48:15,77.79,Virtual,Spotify,"Mumbai, India","New York, USA",0
+aaac3e30-8ffa-4153-ab46-b4ff172676f2,2025-06-30 23:48:15,101.45,Virtual,Uber,"Mumbai, India","Austin, USA",0
+c08999ad-e781-4b11-af95-9cd65a529dad,2025-07-28 23:48:15,129.5,Virtual,Starbucks,"San Francisco, USA","Lagos, Nigeria",0
+5a567266-c069-42a7-97e2-05cb5fc4f875,2025-07-07 23:48:15,372.36,Credit,Target,"San Francisco, USA","Lagos, Nigeria",1
+72801e0e-ed38-47ab-b066-9500e1f3b47b,2025-07-29 23:48:15,72.63,Debit,Virtual Books,"Toronto, Canada","San Francisco, USA",0
+53da423e-3553-41dd-af4a-0b231c818b88,2025-07-09 23:48:15,39.0,Virtual,H&M,"Mumbai, India","London, UK",0
+63d25330-a1cb-45ae-8703-134f741b68dd,2025-07-03 23:48:15,158.57,Debit,BestBuy,"Berlin, Germany","Austin, USA",0
+1ef8dd2a-ac51-42ff-a571-8fb76b736709,2025-07-21 23:48:15,31.59,Credit,Virtual Books,"Chicago, USA","Austin, USA",0
+987645e3-3a02-4a94-a063-5c913069bd54,2025-07-24 23:48:15,57.8,Credit,Lyft,"Toronto, Canada","London, UK",1
+e3cdc49a-30ed-4b51-a6a3-6c8b09722b02,2025-07-03 23:48:15,8.17,Virtual,Starbucks,"Lagos, Nigeria","Lagos, Nigeria",0
+85ef7366-cdaf-4767-8029-2111d9175a6f,2025-07-27 23:48:15,2.57,Debit,BestBuy,"Mumbai, India","London, UK",0
+6aab70ac-3f77-4e08-8740-c845c58ea613,2025-07-05 23:48:15,328.74,Debit,GameZone,"Lagos, Nigeria","London, UK",0
+73fe7ab7-c6e4-4575-b218-be98aad99f25,2025-07-09 23:48:15,180.78,Virtual,Spotify,"Chicago, USA","London, UK",0
+6aa072c0-bd4d-4ee3-b34f-ffca79b18703,2025-07-22 23:48:15,6716.34,Virtual,LagosTech Hub,"Toronto, Canada","New York, USA",1
+ab3a8cd4-aa85-4d9c-8f88-a7f8b3b69fb9,2025-07-01 23:48:15,52.59,Credit,Amazon,"London, UK","Austin, USA",0
+9313375e-8f85-4fc1-8072-ba626781de87,2025-07-03 23:48:15,19.03,Debit,Uber,"Austin, USA","New York, USA",0
+9929b61b-024b-46cc-92b1-1d3fd1df0caf,2025-07-26 23:48:15,17.01,Virtual,Starbucks,"San Francisco, USA","Lagos, Nigeria",0
+1ab2b62c-d200-4fd6-9a1a-9f303c30a462,2025-07-07 23:48:15,28.8,Virtual,Virtual Books,"San Francisco, USA","New York, USA",0
+a155e121-9dde-4cb5-9268-ba82a080951f,2025-07-25 23:48:15,4814.58,Credit,Kirlin Electronics,"Berlin, Germany","Lagos, Nigeria",1
+9289afca-0b1b-4cce-9f78-d38fa1d0cd4d,2025-07-11 23:48:15,125.38,Debit,Lyft,"Chicago, USA","Austin, USA",0
+ab32a158-725f-4077-916a-fccc48d56fec,2025-07-06 23:48:15,107.94,Credit,Target,"Austin, USA","San Francisco, USA",0
+3b721b4f-1eeb-4be7-ba1c-e32de86d7796,2025-07-16 23:48:15,32.84,Credit,AliExpress,"London, UK","New York, USA",0
+e4e1d130-f4da-4f55-8934-4fcf8d920478,2025-07-16 23:48:15,309.81,Debit,MumbaiMobile,"Chicago, USA","Lagos, Nigeria",0
+58161e7d-1020-4fd7-9d04-38f51ad5da2a,2025-07-27 23:48:15,133.9,Debit,Spotify,"Toronto, Canada","San Francisco, USA",1
+fb337e49-62f2-45fd-b8e5-331281644852,2025-07-09 23:48:15,80.82,Debit,Lyft,"London, UK","New York, USA",0
+f6bb3788-8e3c-40b8-8c7e-808d2e32c7f7,2025-07-09 23:48:15,94.6,Virtual,MumbaiMobile,"Toronto, Canada","Lagos, Nigeria",0
+80519d51-f131-44a9-a0fe-1a024b53613a,2025-07-11 23:48:15,54.4,Credit,Delta Airlines,"Berlin, Germany","San Francisco, USA",0
+2cc9921f-758d-4a25-b8c2-f7d6905fd4f6,2025-06-30 23:48:15,28.47,Credit,Walmart,"London, UK","San Francisco, USA",0
+e33a2067-cf1f-4c0c-aba7-5c9884e7438b,2025-07-20 23:48:15,44.0,Credit,CVS Pharmacy,"London, UK","Austin, USA",1
+4c52e77c-b47e-4b62-abdc-547eb10acfd9,2025-07-25 23:48:15,141.82,Credit,BestBuy,"Berlin, Germany","Lagos, Nigeria",0
+e6d1e90a-c775-4586-928a-db2a05f4b890,2025-07-14 23:48:15,1.45,Debit,Starbucks,"Lagos, Nigeria","London, UK",0
+d1a1cc51-ffaf-4ed0-99d8-74e9c7b61224,2025-07-18 23:48:15,12.34,Virtual,Zara,"San Francisco, USA","Austin, USA",0
+fea8b598-f526-4280-a40f-afbf50947d64,2025-07-16 23:48:15,4.71,Credit,Virtual Books,"New York, USA","Lagos, Nigeria",0
+ab73086e-a66f-49df-9760-dab99ab5fa82,2025-07-12 23:48:15,4.16,Debit,Target,"Berlin, Germany","London, UK",1
+19397f62-a842-4377-b5c2-77315e912fbf,2025-07-27 23:48:15,193.42,Virtual,Netflix,"London, UK","Lagos, Nigeria",0
+b2ec9d6b-0035-4426-ab88-60e979a4e421,2025-07-05 23:48:15,121.62,Credit,Netflix,"Austin, USA","Austin, USA",0
+fa0c160d-65f3-451e-b3e3-635ea86b3c14,2025-07-17 23:48:15,64.28,Debit,AliExpress,"San Francisco, USA","Austin, USA",0
+8afcd134-d1e5-477c-a9d3-001ff7b84385,2025-07-18 23:48:15,10.3,Credit,BestBuy,"Chicago, USA","Lagos, Nigeria",0
+1f29397f-8f39-4253-8790-30eed427d66d,2025-07-23 23:48:15,5983.22,Credit,Kirlin Electronics,"London, UK","Lagos, Nigeria",1
+0242521f-7b3e-40a2-823a-537d3fdde79b,2025-07-10 23:48:15,64.15,Credit,Uber,"Toronto, Canada","New York, USA",0
+cb3b0fac-45fc-47cf-9dd9-38ad2630347a,2025-07-02 23:48:15,19.02,Virtual,BestBuy,"Lagos, Nigeria","London, UK",0
+b50046b4-637c-4f3e-afe0-3c2fe0ea4e0a,2025-07-23 23:48:15,56.89,Debit,GameZone,"Austin, USA","Austin, USA",0
+a6cf893b-bc70-4f14-8304-c617fa600578,2025-07-25 23:48:15,50.83,Credit,BestBuy,"Lagos, Nigeria","Austin, USA",0
+89ba2b54-bd0d-4121-97a4-b5b99401d8d6,2025-07-15 23:48:15,6805.17,Credit,AliExpress,"Toronto, Canada","New York, USA",1
+3050fc65-0d58-492f-bd41-f60ae48fd12d,2025-07-09 23:48:15,100.81,Virtual,Google Ads,"Tokyo, Japan","London, UK",0
+44c1fa54-e466-4cf0-a40d-5c20ed01d399,2025-07-03 23:48:15,4.64,Virtual,H&M,"Mumbai, India","London, UK",0
+a79391e3-e450-44ee-a1c7-87b45f39d344,2025-07-28 23:48:15,46.94,Debit,LagosTech Hub,"Tokyo, Japan","San Francisco, USA",0
+97288875-6eac-45bb-a7fc-c4376c4b778b,2025-07-12 23:48:15,98.31,Debit,Facebook Marketplace,"London, UK","Austin, USA",0
+156db576-f558-482a-a414-b14eb5b2aa3c,2025-07-21 23:48:15,69.94,Debit,Walmart,"San Francisco, USA","London, UK",1
+b2b0d380-2532-433c-8c7e-f80992e145e4,2025-07-19 23:48:15,194.13,Debit,Google Ads,"New York, USA","New York, USA",0
+3c604503-41af-44a5-97f5-e382d0d04a86,2025-07-11 23:48:15,107.5,Credit,Delta Airlines,"Chicago, USA","New York, USA",0
+773fd0b3-a63c-4549-9e58-40f3e24bc7f5,2025-07-13 23:48:15,17.79,Debit,Kirlin Electronics,"Chicago, USA","Lagos, Nigeria",0
+695df36b-a141-4a64-8562-ad8143cb6782,2025-07-10 23:48:15,7.32,Credit,Virtual Books,"Chicago, USA","Lagos, Nigeria",0
+50d593dc-e891-4579-948c-01bcb611a3f2,2025-07-14 23:48:15,102.84,Debit,CVS Pharmacy,"Tokyo, Japan","London, UK",1
+3fda75e5-bb32-4a8f-b101-81a8e647f305,2025-07-05 23:48:15,2.69,Credit,Starbucks,"San Francisco, USA","Lagos, Nigeria",0
+44baae36-ea95-4c06-9b9c-543b0214250d,2025-07-10 23:48:15,88.13,Virtual,Uber,"Toronto, Canada","New York, USA",0
+6c4d29b5-01fc-441e-bd42-efd2ce57fb4a,2025-07-16 23:48:15,281.73,Credit,Apple Store,"Tokyo, Japan","San Francisco, USA",0
+a2ce6358-d058-4cc9-b26c-350a9fbd195b,2025-07-19 23:48:15,85.68,Virtual,Kirlin Electronics,"Austin, USA","London, UK",0
+cc4ed570-da0d-44da-8aee-f7f14ae60fc4,2025-07-06 23:48:15,49.13,Debit,Lyft,"Berlin, Germany","Lagos, Nigeria",1
+7508f72d-e4a7-41f9-8c7a-10c46ccb8000,2025-07-05 23:48:15,103.08,Virtual,Uber,"New York, USA","London, UK",0
+20d49eb6-f831-41ed-a886-496d6e1dec45,2025-07-20 23:48:15,61.3,Virtual,LagosTech Hub,"San Francisco, USA","Austin, USA",0
+1de35d23-ede2-4ad1-842c-17ac9242e7fd,2025-07-22 23:48:15,78.88,Virtual,BestBuy,"London, UK","Lagos, Nigeria",0
+fc66b0d0-c805-457a-a02f-09d756d934fb,2025-07-20 23:48:15,283.81,Virtual,Virtual Books,"Austin, USA","London, UK",0
+f6c8ecab-3256-4739-8fee-3c88bbcfdbb0,2025-07-21 23:48:15,2500.0,Virtual,Target,"Mumbai, India","San Francisco, USA",1
+6aac1feb-b3e6-4a4c-beec-5a60151466cf,2025-07-11 23:48:15,324.91,Virtual,LagosTech Hub,"Austin, USA","Lagos, Nigeria",0
+8dfd881f-43d2-4cfb-b897-efbbfcd8eb0c,2025-07-18 23:48:15,235.76,Credit,Moscow Bazaar,"Toronto, Canada","Austin, USA",0
+6f94d83b-52c4-4c5f-945b-0656367678c6,2025-07-28 23:48:15,21.79,Debit,LagosTech Hub,"Toronto, Canada","San Francisco, USA",0
+84385b58-0874-460f-b3ba-e00b25fa2e2f,2025-07-19 23:48:15,7.19,Virtual,LagosTech Hub,"Toronto, Canada","Lagos, Nigeria",0
+5b20b4a8-e56a-400c-b3c1-946e1daca6d4,2025-07-20 23:48:15,10.62,Debit,Amazon,"London, UK","Austin, USA",1
+2dfe9fd3-163e-4e96-8eb6-27ab0078d475,2025-07-26 23:48:15,1.84,Debit,GameZone,"Lagos, Nigeria","San Francisco, USA",0
+7737bce7-c35b-4491-96ad-b950a3827992,2025-07-14 23:48:15,9.92,Credit,Starbucks,"San Francisco, USA","Austin, USA",0
+f6b77de2-1e3b-4a37-8a22-c0400ef2a92f,2025-07-09 23:48:15,114.89,Virtual,GameZone,"New York, USA","London, UK",0
+36c26841-58f2-4003-8235-e8c20bbf245d,2025-07-18 23:48:15,7.38,Virtual,Uber,"Chicago, USA","San Francisco, USA",0
+d28ce2f4-2bda-4448-8422-99348de436d7,2025-07-07 23:48:15,38.42,Credit,Starbucks,"London, UK","San Francisco, USA",1
+2a3d598f-d3d5-418c-aa65-8e712402b136,2025-07-09 23:48:15,186.35,Credit,Google Ads,"Mumbai, India","Lagos, Nigeria",0
+120c6002-a273-4722-ab9a-8f10bf411d7c,2025-07-21 23:48:15,2.35,Credit,Virtual Books,"Chicago, USA","Lagos, Nigeria",0
+0bf9f5bc-679c-4366-a83a-9122671092ae,2025-07-13 23:48:15,168.45,Virtual,GameZone,"Lagos, Nigeria","Lagos, Nigeria",0
+b6ed917e-6abe-4f53-8fe5-bc16eae93f91,2025-07-19 23:48:15,33.11,Debit,Costco,"Lagos, Nigeria","Lagos, Nigeria",0
+ecc6a89c-a423-4fef-a700-2a9841f4ecff,2025-07-06 23:48:15,6077.75,Virtual,MumbaiMobile,"Tokyo, Japan","Lagos, Nigeria",1
+e10f2358-99d6-4a9e-90c1-e1301aebe42c,2025-06-30 23:48:15,119.32,Virtual,Netflix,"Berlin, Germany","London, UK",0
+3847cc54-d948-45a1-adee-1971983eb6b0,2025-07-03 23:48:15,99.14,Credit,Apple Store,"Austin, USA","London, UK",0
+eb4670d2-4cf4-4180-8b4a-ba3cab448277,2025-07-13 23:48:15,209.94,Credit,Shell Gas,"Mumbai, India","Lagos, Nigeria",0
+7ff64af0-003f-40a2-a007-94cc104945da,2025-07-21 23:48:15,132.83,Virtual,BestBuy,"San Francisco, USA","London, UK",0
+1500681b-f45d-4214-ac6e-ee0eb4d61594,2025-07-02 23:48:15,162.7,Credit,Target,"Tokyo, Japan","Austin, USA",1
+96865992-7cb2-461f-85f6-fd302d509a86,2025-06-30 23:48:15,33.13,Credit,Kirlin Electronics,"San Francisco, USA","Lagos, Nigeria",0
+46535a54-8513-4b2b-9fa3-c38e8e08d9d5,2025-07-17 23:48:15,19.53,Debit,Costco,"New York, USA","Austin, USA",0
+2046db6c-d85c-4619-9b48-34bd530098c5,2025-07-23 23:48:15,138.88,Debit,Walmart,"Mumbai, India","London, UK",0
+c6bec9f2-113a-4f66-9398-90f474ec1d9a,2025-07-30 23:48:15,164.42,Credit,Netflix,"Lagos, Nigeria","Austin, USA",0
+f6975aa7-55b9-4e56-9615-c95ddac56f69,2025-07-29 23:48:15,465.7,Credit,Uber,"London, UK","Austin, USA",1
+1c5fd360-6e25-4be2-b7c4-c23c066cf695,2025-07-16 23:48:15,53.21,Debit,Delta Airlines,"Tokyo, Japan","San Francisco, USA",0
+90cef319-21d9-4bb1-aaea-e107e15f6e6e,2025-07-22 23:48:15,46.52,Credit,AliExpress,"New York, USA","New York, USA",0
+988f9f92-1c27-4a08-ade7-bbe77d62efaf,2025-07-14 23:48:15,149.8,Credit,CVS Pharmacy,"Chicago, USA","London, UK",0
+1873d859-587a-4f7a-8a1b-dbbe646c8440,2025-07-21 23:48:15,41.67,Credit,Spotify,"Lagos, Nigeria","Austin, USA",0
+cd63144e-f567-496a-ba95-56ee774a9029,2025-07-10 23:48:15,267.01,Credit,BestBuy,"Berlin, Germany","San Francisco, USA",1
+103b1cc7-cffd-44c3-8dcc-792c8e59699f,2025-07-04 23:48:15,195.48,Debit,AliExpress,"San Francisco, USA","New York, USA",0
+f8387262-47e8-4092-a053-d50ae2c7a4a4,2025-07-10 23:48:15,56.04,Virtual,Facebook Marketplace,"New York, USA","London, UK",0
+dadddafb-42e8-4e6e-868c-f63b62401b74,2025-07-21 23:48:15,138.98,Virtual,Kirlin Electronics,"Austin, USA","San Francisco, USA",0
+01282cbf-c953-4608-a811-47dd93fc8fcc,2025-07-23 23:48:15,140.46,Credit,Spotify,"Mumbai, India","London, UK",0
+ce532d4f-596a-4f2c-94ef-665e6d04f9e1,2025-07-19 23:48:15,10.88,Debit,H&M,"Tokyo, Japan","San Francisco, USA",1
+06e54d66-0983-4152-a19a-7036a4d18720,2025-07-05 23:48:15,232.84,Virtual,Target,"Toronto, Canada","London, UK",0
+13c0efce-8339-450f-8323-6494570ea8cf,2025-07-03 23:48:15,70.37,Virtual,Kirlin Electronics,"Berlin, Germany","New York, USA",0
+853af132-06ea-4d48-bab8-b46a195e454b,2025-07-22 23:48:15,175.13,Credit,Facebook Marketplace,"Mumbai, India","Lagos, Nigeria",0
+359664aa-627f-439e-a4aa-94d2d3e6e1b9,2025-07-19 23:48:15,38.57,Credit,Virtual Books,"San Francisco, USA","Austin, USA",0
+b70e6c27-d8c4-4ada-864e-039c0fb3e1b2,2025-07-06 23:48:15,2500.0,Virtual,Costco,"Toronto, Canada","New York, USA",1
+225ef2b3-30d2-4f30-9849-d3a6f0ce9dc5,2025-07-13 23:48:15,49.3,Credit,Uber,"Mumbai, India","New York, USA",0
+04e8cf4a-caf1-4038-9783-338baee9292e,2025-07-08 23:48:15,1.09,Virtual,Uber,"Tokyo, Japan","San Francisco, USA",0
+4f1ddd8b-873e-40ca-9af2-dec912a102ef,2025-07-28 23:48:15,235.79,Virtual,Facebook Marketplace,"Austin, USA","San Francisco, USA",0
+ba54adef-c3fb-4795-a9b3-3839fb664a3c,2025-07-24 23:48:15,9.57,Debit,Moscow Bazaar,"London, UK","New York, USA",0
+b0c2c92d-f8f5-4172-8b44-dfa282f029c5,2025-07-01 23:48:15,38.47,Credit,Walmart,"Mumbai, India","New York, USA",1
+e9a742ba-9fe6-4a33-a68a-2282612b4ba9,2025-07-15 23:48:15,299.7,Virtual,Delta Airlines,"Toronto, Canada","Lagos, Nigeria",0
+44a63579-a700-41af-8c39-834c08b828c8,2025-07-19 23:48:15,300.79,Credit,Shell Gas,"London, UK","San Francisco, USA",0
+b186fd76-f68f-4b46-841c-ecff9f0c237f,2025-07-27 23:48:15,85.2,Credit,GameZone,"London, UK","Austin, USA",0
+729d99fd-8dab-462f-ac99-38927e2adc06,2025-07-02 23:48:15,99.92,Debit,Lyft,"Tokyo, Japan","Lagos, Nigeria",0
+3262881d-bbd3-4ddc-9e53-7067047df8ec,2025-07-08 23:48:15,59.5,Debit,Netflix,"Tokyo, Japan","San Francisco, USA",1
+4e23e304-414e-464a-b75b-acd28e14b2b9,2025-07-05 23:48:15,34.7,Debit,Facebook Marketplace,"London, UK","London, UK",0
+e0195f1c-d727-4320-a439-829047080d33,2025-07-17 23:48:15,39.85,Virtual,Target,"San Francisco, USA","Lagos, Nigeria",0
+f7d9bf8e-60c8-4aeb-be1f-925d54c7d294,2025-07-20 23:48:15,111.63,Credit,AliExpress,"London, UK","London, UK",0
+3f8beadf-d523-463f-b8a4-58a160d87bd9,2025-07-21 23:48:15,139.58,Credit,BestBuy,"London, UK","Austin, USA",0
+811acfb9-b83f-41d2-9a5a-259520852d75,2025-07-08 23:48:15,2500.0,Virtual,Google Ads,"Austin, USA","Lagos, Nigeria",1
+5475879f-ea4a-45e6-8883-30fcf3a5aa7f,2025-07-07 23:48:15,155.88,Debit,Google Ads,"New York, USA","Lagos, Nigeria",0
+90eea816-12d5-4ffd-8528-9d20608e717d,2025-07-10 23:48:15,9.56,Virtual,Lyft,"London, UK","Lagos, Nigeria",0
+b39f36b8-8c88-4e54-8ba9-cf549936f488,2025-07-14 23:48:15,68.2,Credit,Walmart,"Mumbai, India","Lagos, Nigeria",0
+560047e0-80c0-4e88-981b-ed591570fbcf,2025-07-26 23:48:15,5.93,Virtual,Virtual Books,"New York, USA","San Francisco, USA",0
+a488daae-4ce1-49c5-b4c3-314bec3ecb49,2025-07-23 23:48:15,3504.92,Virtual,AliExpress,"New York, USA","Lagos, Nigeria",1
+ec5f688e-9847-4fa8-bf7c-8c927ea27417,2025-07-18 23:48:15,58.26,Virtual,GameZone,"Mumbai, India","Austin, USA",0
+6f636078-e485-47f5-8ac1-c07b1f1ed159,2025-07-09 23:48:15,218.66,Credit,H&M,"Austin, USA","London, UK",0
+14479554-39e3-4286-bd9f-e2b0190feef3,2025-07-06 23:48:15,43.22,Debit,Google Ads,"Tokyo, Japan","Austin, USA",0
+4af512ac-44e7-4e27-bc39-adca7cc95a53,2025-07-19 23:48:15,12.45,Virtual,Target,"Toronto, Canada","San Francisco, USA",0
+cd7994b9-a696-40c7-95e7-3dd21ad89905,2025-06-30 23:48:15,15.43,Debit,Netflix,"Lagos, Nigeria","Austin, USA",1
+50477b93-1594-4928-9148-0cbea4b9da18,2025-07-14 23:48:15,143.34,Credit,BestBuy,"Tokyo, Japan","San Francisco, USA",0
+d4dbbf8c-1aa3-4729-aefc-a150d0220410,2025-07-06 23:48:15,96.29,Virtual,Netflix,"London, UK","New York, USA",0
+af51ea0d-400d-4848-aae7-98fe853770c3,2025-07-11 23:48:15,10.66,Virtual,Shell Gas,"Lagos, Nigeria","Lagos, Nigeria",0
+13c77f9b-9fc6-4b35-a9d4-0d3581dc1339,2025-07-27 23:48:15,8.79,Virtual,Delta Airlines,"Lagos, Nigeria","Lagos, Nigeria",0
+66a03fd5-c1ae-4df9-aa38-add01e4cc333,2025-07-02 23:48:15,120.72,Credit,Starbucks,"Austin, USA","Lagos, Nigeria",1
+61e7421c-fbc5-4b95-91cb-268fb77bc14c,2025-07-09 23:48:15,7.55,Debit,Moscow Bazaar,"Mumbai, India","New York, USA",0
+0bda55fb-c632-4c58-8186-ab9816949b1e,2025-07-13 23:48:15,172.52,Virtual,Lyft,"Toronto, Canada","New York, USA",0
+da59083b-5377-4a88-b908-c34e307c2c5a,2025-07-05 23:48:15,122.5,Debit,Delta Airlines,"Austin, USA","San Francisco, USA",0
+54be2a08-8c98-4041-8a08-8f46b58ec8f9,2025-07-24 23:48:15,8.48,Virtual,Lyft,"San Francisco, USA","San Francisco, USA",0
+956e6a23-6e63-4943-87e3-6c130402e8fd,2025-07-19 23:48:15,8.87,Credit,Starbucks,"New York, USA","Lagos, Nigeria",1
+d1a674dc-4505-400a-89d2-bb8afbfd2f41,2025-07-05 23:48:15,431.55,Virtual,Zara,"Tokyo, Japan","Austin, USA",0
+fabe9bfc-78f5-4b3a-854c-c3e170a02063,2025-07-28 23:48:15,46.88,Credit,Zara,"San Francisco, USA","London, UK",0
+59ab02a2-4588-4430-912b-5618a755d6ac,2025-07-17 23:48:15,46.31,Debit,Delta Airlines,"Toronto, Canada","Lagos, Nigeria",0
+b3a2c662-0abe-4e24-8776-44adb2f922e7,2025-07-26 23:48:15,167.56,Debit,GameZone,"San Francisco, USA","London, UK",0
+ef5a1aa9-bf73-4f89-a421-836da632e07d,2025-07-16 23:48:15,2500.0,Virtual,Uber,"Tokyo, Japan","New York, USA",1
+49a695a1-9cf7-4f6c-90a6-ea76b114a304,2025-07-02 23:48:15,426.88,Virtual,MumbaiMobile,"Austin, USA","Austin, USA",0
+557156b9-5c40-4c92-8f91-2a1edb9dd175,2025-07-06 23:48:15,139.99,Virtual,GameZone,"Austin, USA","London, UK",0
+c15689f9-ca65-466d-9c51-68458f0f3ca1,2025-07-04 23:48:15,47.2,Debit,Starbucks,"New York, USA","London, UK",0
+09c9c9eb-a52a-4605-b678-75f0e8a09d85,2025-07-25 23:48:15,8.72,Virtual,BestBuy,"London, UK","San Francisco, USA",0
+e1e25eda-183c-4700-966c-7f7af0c09b0c,2025-06-30 23:48:15,150.12,Debit,Apple Store,"Mumbai, India","San Francisco, USA",1
+787e74b7-b030-4048-8df1-a3262f9e002b,2025-07-24 23:48:15,81.74,Debit,Kirlin Electronics,"London, UK","New York, USA",0
+2a6f0e82-310d-405e-8076-9a6669bbefdf,2025-07-10 23:48:15,55.2,Virtual,LagosTech Hub,"Austin, USA","Austin, USA",0
+4bae030a-094e-479d-a0d2-2a64735d20c8,2025-07-14 23:48:15,236.82,Virtual,Delta Airlines,"San Francisco, USA","London, UK",0
+20a439fc-56cd-4bfe-ad1d-41e78be598fd,2025-07-26 23:48:15,11.79,Credit,LagosTech Hub,"Chicago, USA","London, UK",0
+cc0e1afd-f76e-4799-93f7-45432f0ba6c1,2025-07-20 23:48:15,2500.0,Virtual,Apple Store,"Chicago, USA","London, UK",1
+7032c9db-1736-4e50-b750-2cd2395631e0,2025-07-29 23:48:15,1.14,Credit,H&M,"San Francisco, USA","New York, USA",0
+a61cfd2f-bcac-4ad9-8f5c-8461e9d56c96,2025-07-06 23:48:15,63.24,Virtual,LagosTech Hub,"Lagos, Nigeria","Austin, USA",0
+1507681c-b06d-48c0-b3bd-c0506625023f,2025-07-15 23:48:15,5.8,Debit,H&M,"New York, USA","London, UK",0
+b3e0f8e1-1c47-4e44-a99c-90930ad42224,2025-07-15 23:48:15,12.65,Virtual,LagosTech Hub,"London, UK","Austin, USA",0
+7d1326bf-18e4-4272-a5a4-cdeda9651bd9,2025-07-16 23:48:15,2500.0,Virtual,Costco,"London, UK","Lagos, Nigeria",1
+4287c5d5-ebec-44ab-a95d-e362c545f223,2025-07-16 23:48:15,104.76,Virtual,Target,"Austin, USA","New York, USA",0
+08c64c14-6d4c-4375-b4ee-d61bb646bb62,2025-07-20 23:48:15,137.06,Debit,Spotify,"Lagos, Nigeria","Lagos, Nigeria",0
+47fcff33-f7c1-4ac8-a142-d2cb5d5e0d09,2025-07-07 23:48:15,87.56,Credit,AliExpress,"Mumbai, India","Austin, USA",0
+4134aa1d-4fb5-455d-92da-16c3a36e04a8,2025-07-14 23:48:15,327.47,Debit,Lyft,"Mumbai, India","San Francisco, USA",0
+cb8fb6d9-1f6b-454f-ada0-340c97996ee8,2025-07-16 23:48:15,46.98,Credit,Zara,"Lagos, Nigeria","Austin, USA",1
+35893221-609a-48e8-9303-88ebe664d6c9,2025-07-26 23:48:15,33.65,Debit,BestBuy,"Lagos, Nigeria","Lagos, Nigeria",0
+04cfee6c-40ae-44e2-8e0e-24b6c2b1d437,2025-07-03 23:48:15,202.95,Credit,BestBuy,"Berlin, Germany","Austin, USA",0
+c051e424-6bf6-4e78-af7b-2aa07a4852aa,2025-07-04 23:48:15,25.31,Debit,AliExpress,"Austin, USA","San Francisco, USA",0
+b2a7fe0f-05fe-4c1f-a059-5bf6f85f46f9,2025-07-06 23:48:15,330.29,Virtual,Uber,"Lagos, Nigeria","Austin, USA",0
+4bc89f28-02a0-4631-9b83-bacf3839abca,2025-07-15 23:48:15,1.22,Debit,Apple Store,"Tokyo, Japan","London, UK",1
+426384b1-e831-483b-8746-431f4260ddcf,2025-06-30 23:48:15,350.25,Debit,Delta Airlines,"San Francisco, USA","New York, USA",0
+70957518-b7df-41b8-a886-0b362f46fa38,2025-07-24 23:48:15,4.41,Virtual,Netflix,"Lagos, Nigeria","Lagos, Nigeria",0
+f2e22ecb-6c35-47a2-8d22-fcb6b3f188ac,2025-07-21 23:48:15,221.77,Debit,H&M,"New York, USA","New York, USA",0
+1bdd3a44-5db0-46e1-b6db-126bf420f802,2025-07-13 23:48:15,75.01,Virtual,Facebook Marketplace,"London, UK","Lagos, Nigeria",0
+d1757034-4ee9-4314-8dbb-bf9691534a3f,2025-07-02 23:48:15,495.68,Credit,Amazon,"Austin, USA","Lagos, Nigeria",1
+dee99746-cd95-4833-8bf6-fce7a48174b5,2025-07-19 23:48:16,7.67,Virtual,Shell Gas,"Berlin, Germany","Austin, USA",0
+da94e06c-fdb3-48ea-ac29-1d6a56f48109,2025-07-13 23:48:16,80.71,Debit,Walmart,"Chicago, USA","New York, USA",0
+85277fca-3a0b-4eaa-8be9-68e79593aeb4,2025-07-28 23:48:16,348.36,Debit,CVS Pharmacy,"London, UK","London, UK",0
+b58c908a-51ef-44c6-a66a-463ea46a5c8f,2025-07-22 23:48:16,74.04,Virtual,Netflix,"Toronto, Canada","Lagos, Nigeria",0
+96d322df-c3ef-4584-81b9-ac033aeb5df5,2025-07-27 23:48:16,3514.65,Virtual,AliExpress,"San Francisco, USA","London, UK",1
+ad954036-46c4-4361-af37-31cdbb84c0d2,2025-06-30 23:48:16,118.99,Debit,Netflix,"Toronto, Canada","Austin, USA",0
+e927f172-e889-4312-97e2-f29aed38d873,2025-07-14 23:48:16,60.61,Credit,Lyft,"Chicago, USA","San Francisco, USA",0
+b8ee6af0-00d7-44f5-8467-9625320d0b3b,2025-07-29 23:48:16,98.77,Virtual,Netflix,"New York, USA","New York, USA",0
+223fe3d8-0628-4b23-8d15-a0891fa3ffd6,2025-07-14 23:48:16,87.78,Virtual,Starbucks,"Tokyo, Japan","Austin, USA",0
+2b3d921a-6a0d-4129-8df7-e4f4ee0d008e,2025-07-26 23:48:16,231.42,Credit,Google Ads,"Toronto, Canada","London, UK",1
+517905f6-13a9-4480-8f1a-a5aacf3027c5,2025-07-18 23:48:16,4.65,Virtual,Uber,"Austin, USA","Austin, USA",0
+1bcb5139-b8de-4505-8bca-62d2e65c9888,2025-07-20 23:48:16,32.98,Virtual,AliExpress,"Chicago, USA","Austin, USA",0
+7cc8f52b-0f07-4292-a47c-1bb604ad7e63,2025-07-08 23:48:16,300.4,Virtual,Kirlin Electronics,"Tokyo, Japan","London, UK",0
+f6ccfe25-5ab0-46a9-9d62-909a6af2fea9,2025-07-19 23:48:16,220.97,Debit,H&M,"New York, USA","Lagos, Nigeria",0
+d60be6f8-2867-4769-9bb7-0a7cf2080142,2025-07-12 23:48:16,2500.0,Virtual,Uber,"Berlin, Germany","New York, USA",1
+96ef45df-e6b8-46e1-8e0e-5cf300f48f77,2025-07-15 23:48:16,96.79,Virtual,Delta Airlines,"Chicago, USA","New York, USA",0
+32ad9982-fcaa-4fcd-9bf0-c7a7cecf66f3,2025-07-23 23:48:16,32.49,Virtual,Shell Gas,"Chicago, USA","London, UK",0
+35bb1c87-478a-4b76-8e66-b381429d2c9f,2025-07-25 23:48:16,20.84,Credit,Virtual Books,"Tokyo, Japan","London, UK",0
+4ca73ca9-3332-4c0f-a593-88671572843d,2025-07-26 23:48:16,62.31,Virtual,Kirlin Electronics,"Berlin, Germany","London, UK",0
+6085bbd0-5028-4087-9ad0-c1f17a1c2270,2025-07-24 23:48:16,6792.82,Credit,MumbaiMobile,"Lagos, Nigeria","New York, USA",1
+ce1c989f-0bdf-4dc9-aa04-2bc1f2b3f539,2025-07-26 23:48:16,87.62,Debit,Amazon,"Berlin, Germany","Austin, USA",0
+f6bc92ab-acc0-4a19-a709-d7fa9ec9fcdd,2025-07-14 23:48:16,8.09,Virtual,Spotify,"Berlin, Germany","San Francisco, USA",0
+92627dc6-a592-49fa-95f4-f3aa84bee408,2025-07-08 23:48:16,366.5,Virtual,GameZone,"New York, USA","Lagos, Nigeria",0
+2a36720c-d228-4bbd-89c7-c36681adacb9,2025-07-20 23:48:16,428.39,Virtual,Starbucks,"Toronto, Canada","San Francisco, USA",0
