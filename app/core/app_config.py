@@ -1,5 +1,10 @@
 # app/core/app_config.py
 import os
+from dotenv import load_dotenv # Import load_dotenv
+
+load_dotenv() # This should be the very first executable line after imports.
+              # It loads variables from your .env file for local development.
+
 # --- Directory Paths ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)
@@ -33,5 +38,13 @@ RISKY_MERCHANTS = {"fraud_kirlin", "shady_importsng", "unverified_gadgetx"} # Fo
 
 # --- LLM API Configuration (for Groq) ---
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_API_KEY = "##"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY") # Correctly retrieves the key from environment variables
+if not GROQ_API_KEY:
+    print("WARNING: GROQ_API_KEY environment variable not set. Narrative generation may fail.")
 GROQ_MODEL_NAME = "llama3-8b-8192"
+
+# --- Backend API URL Configuration ---
+# This is crucial for your Streamlit frontend to connect to the FastAPI backend.
+# It defaults to localhost for local development, but will be overridden by
+# the environment variable set in Render/Streamlit Cloud for deployment.
+BACKEND_API_URL = os.getenv("BACKEND_API_URL", "http://localhost:8000")
