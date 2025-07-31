@@ -1,0 +1,38 @@
+{
+    "F1.1": {
+        "condition": "merchant_flag",
+        "action": "fraud",
+        "reason": "Transaction with a known blacklisted merchant.",
+        "confidence": 0.95
+    },
+    "F2.1": {
+        "condition": "location_flag and card_type == 'virtual' and amount > VIRTUAL_CARD_LIMIT",
+        "action": "fraud",
+        "reason": "Foreign cross-border transaction with virtual card and high value.",
+        "confidence": 0.98
+    },
+    "F6.1": {
+        "condition": "merchant == '' or merchant_location == ''",
+        "action": "fraud",
+        "reason": "Missing or invalid essential merchant metadata.",
+        "confidence": 0.90
+    },
+    "E1.1": {
+        "condition": "amount > HIGH_VALUE_TRANSACTION_THRESHOLD",
+        "action": "escalate",
+        "reason": "High-value transaction exceeding general threshold.",
+        "confidence": 0.80
+    },
+    "E3.1": {
+        "condition": "False",
+        "action": "escalate",
+        "reason": "General bank compliance policy mismatch (placeholder, actual policy details needed).",
+        "confidence": 0.75
+    },
+    "F12.1": {
+        "condition": "card_type == 'debit' and amount > EXTREMELY_HIGH_VALUE_DEBIT_THRESHOLD",
+        "action": "fraud",
+        "reason": "Extremely high-value debit card transaction, highly suspicious.",
+        "confidence": 0.99
+    }
+}
