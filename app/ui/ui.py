@@ -4,7 +4,7 @@ import json
 import uuid
 
 # --- Configuration ---
-API_BASE_URL = "https://finguard-agents-api.onrender.com"
+API_BASE_URL = "https://fingard-agents-api.onrender.com"
 
 # --- Session State Initialization ---
 if 'amount' not in st.session_state:
