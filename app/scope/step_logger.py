@@ -52,4 +52,3 @@ class StepLogger:
             # print(f"Logged step {step} for {transaction_id} to {file_name}") # Optional: for debugging
         except Exception as e:
             print(f"ERROR: Failed to write log for transaction {transaction_id} to {log_file_path}: {e}")
-
