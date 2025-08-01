@@ -2,9 +2,10 @@ import streamlit as st
 import requests
 import json
 import uuid
+from app.core.app_config import BACKEND_API_URL # Import the backend URL
 
 # --- Configuration ---
-API_BASE_URL = "https://fingard-agents-api.onrender.com"
+API_BASE_URL = BACKEND_API_URL # Use the dynamic URL
 
 # --- Session State Initialization ---
 if 'amount' not in st.session_state:
@@ -56,19 +57,19 @@ def fetch_trace():
 
     try:
         if st.session_state.trace_mode == "summary":
-            response = requests.get(f"{API_BASE_URL}/trace/summary/{st.session_state.transaction_id}")
+            response = requests.get(f"{API_BASE_URL}/api/trace/summary/{st.session_state.transaction_id}")
             response.raise_for_status()
             st.session_state.trace_summary_data = response.json()
             st.session_state.trace_verbose_data = []
         else:
-            response = requests.get(f"{API_BASE_URL}/trace/verbose/{st.session_state.transaction_id}")
+            response = requests.get(f"{API_BASE_URL}/api/trace/verbose/{st.session_state.transaction_id}")
             response.raise_for_status()
             data = response.json()
             
             # FIXED: Properly handle the trace data structure
             if isinstance(data, dict) and 'steps' in data:
                 st.session_state.trace_verbose_data = data['steps']
-            elif isinstance(data, list):
+            elif isinstance(data, list): # Fallback for older formats if any
                 st.session_state.trace_verbose_data = data
             else:
                 st.session_state.trace_verbose_data = []
@@ -101,7 +102,7 @@ def submit_transaction():
     }
 
     try:
-        response = requests.post(f"{API_BASE_URL}/simulate_transaction", json=txn_payload)
+        response = requests.post(f"{API_BASE_URL}/api/simulate_transaction", json=txn_payload)
         response.raise_for_status()
         data = response.json()
 
