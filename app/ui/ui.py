@@ -2,7 +2,6 @@ import streamlit as st
 import requests
 import json
 import uuid
-from app.core.app_config import BACKEND_API_URL # Import the backend URL
 
 # --- Configuration ---
 API_BASE_URL = "https://fingard-agents-api.onrender.com"
@@ -57,12 +56,12 @@ def fetch_trace():
 
     try:
         if st.session_state.trace_mode == "summary":
-            response = requests.get(f"{API_BASE_URL}/api/trace/summary/{st.session_state.transaction_id}")
+            response = requests.get(f"{API_BASE_URL}/trace/summary/{st.session_state.transaction_id}")
             response.raise_for_status()
             st.session_state.trace_summary_data = response.json()
             st.session_state.trace_verbose_data = []
         else:
-            response = requests.get(f"{API_BASE_URL}/api/trace/verbose/{st.session_state.transaction_id}")
+            response = requests.get(f"{API_BASE_URL}/trace/verbose/{st.session_state.transaction_id}")
             response.raise_for_status()
             data = response.json()
             
@@ -102,7 +101,7 @@ def submit_transaction():
     }
 
     try:
-        response = requests.post(f"{API_BASE_URL}/api/simulate_transaction", json=txn_payload)
+        response = requests.post(f"{API_BASE_URL}/simulate_transaction", json=txn_payload)
         response.raise_for_status()
         data = response.json()
 
@@ -255,29 +254,52 @@ with col2:
             else:
                 st.info("No verbose trace data available yet. Submit a transaction.")
 
-# Add some example data buttons for testing
-st.sidebar.header("Quick Test Examples")
+# Add some example data buttons for testing in the main area
+st.markdown("---")
+st.subheader("Quick Test Examples")
 
-if st.sidebar.button("Load Safe Transaction Example"):
-    st.session_state.amount = 150.0
-    st.session_state.card_type = "credit"
-    st.session_state.merchant = "Amazon"
-    st.session_state.merchant_location = "USA"
-    st.session_state.user_location = "USA"
-    st.rerun()
+example_cols = st.columns(3)
 
-if st.sidebar.button("Load Fraud Transaction Example"):
-    st.session_state.amount = 4500.0
-    st.session_state.card_type = "virtual"
-    st.session_state.merchant = "fraud_Kirlin"
-    st.session_state.merchant_location = "Nigeria"
-    st.session_state.user_location = "USA"
-    st.rerun()
+with example_cols[0]:
+    if st.button("Load Safe Transaction Example"):
+        st.session_state.amount = 150.0
+        st.session_state.card_type = "credit"
+        st.session_state.merchant = "Amazon"
+        st.session_state.merchant_location = "USA"
+        st.session_state.user_location = "USA"
+        st.rerun()
 
-if st.sidebar.button("Load Cross-Border Example"):
-    st.session_state.amount = 2000.0
-    st.session_state.card_type = "credit"
-    st.session_state.merchant = "Electronics_Store"
-    st.session_state.merchant_location = "China"
-    st.session_state.user_location = "USA"
-    st.rerun()
+with example_cols[1]:
+    if st.button("Load Fraud Transaction Example"):
+        st.session_state.amount = 4500.0
+        st.session_state.card_type = "virtual"
+        st.session_state.merchant = "fraud_Kirlin"
+        st.session_state.merchant_location = "Nigeria"
+        st.session_state.user_location = "USA"
+        st.rerun()
+
+with example_cols[2]:
+    if st.button("Load Cross-Border Example"):
+        st.session_state.amount = 2000.0
+        st.session_state.card_type = "credit"
+        st.session_state.merchant = "Electronics_Store"
+        st.session_state.merchant_location = "China"
+        st.session_state.user_location = "USA"
+        st.rerun()
+
+# Developer Information Footer
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; padding: 20px; background-color: #f0f2f6; border-radius: 10px; margin-top: 30px;'>
+        <h4>👨‍💻 Developed by Durga Katreddi</h4>
+        <p>AI/ML Engineer specializing in Fraud Detection & Multi-Agent Systems</p>
+        <a href="https://github.com/KATREDDIDURGA/Agentscope-FinGuard" target="_blank" style='text-decoration: none;'>
+            <button style='background-color: #24292e; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;'>
+                🔗 View on GitHub
+            </button>
+        </a>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
