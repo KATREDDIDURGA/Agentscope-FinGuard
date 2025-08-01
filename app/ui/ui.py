@@ -5,7 +5,7 @@ import uuid
 from app.core.app_config import BACKEND_API_URL # Import the backend URL
 
 # --- Configuration ---
-API_BASE_URL = BACKEND_API_URL # Use the dynamic URL
+API_BASE_URL = "https://fingard-agents-api.onrender.com"
 
 # --- Session State Initialization ---
 if 'amount' not in st.session_state:
