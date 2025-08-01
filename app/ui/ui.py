@@ -292,10 +292,10 @@ st.markdown("---")
 st.markdown(
     """
     <div style='text-align: center; padding: 20px; background-color: #f0f2f6; border-radius: 10px; margin-top: 30px;'>
-        <h4>👨‍💻 Developed by Durga Katreddi</h4>
-        <p>AI/ML Engineer specializing in Fraud Detection & Multi-Agent Systems</p>
+        <h4 style='color: #000000; margin-bottom: 10px;'>👨‍💻 Developed by Durga Katreddi</h4>
+        <p style='color: #000000; margin-bottom: 15px; font-size: 16px;'>AI/ML Engineer specializing in Fraud Detection & Multi-Agent Systems</p>
         <a href="https://github.com/KATREDDIDURGA/Agentscope-FinGuard" target="_blank" style='text-decoration: none;'>
-            <button style='background-color: #24292e; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;'>
+            <button style='background-color: #24292e; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: bold; transition: background-color 0.3s;'>
                 🔗 View on GitHub
             </button>
         </a>
