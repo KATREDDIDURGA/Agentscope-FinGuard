@@ -15,5 +15,5 @@ streamlit
 reflex
 tqdm
 requests
-
+plotly
 reflex==0.8.4
