@@ -408,7 +408,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Configuration ---
-API_BASE_URL = "https://finguard-agents-api.onrender.com"
+API_BASE_URL = "https://fingard-agents-api.onrender.com"
 
 # --- Session State Initialization ---
 def init_session_state():
