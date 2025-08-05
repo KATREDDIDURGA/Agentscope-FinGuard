@@ -13,7 +13,7 @@ import glob
 import numpy as np
 from pathlib import Path
 import plotly.io as pio
-pio.templates.default = "plotly_white"  # or "ggplot2", "seaborn"
+pio.templates.default = "plotly_white"
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -45,7 +45,9 @@ st.markdown("""
     .main .block-container {
         background-color: #ffffff !important;
         color: #1e293b !important;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        max-width: 1200px;
     }
     
     /* Override ALL text elements to be visible */
@@ -71,11 +73,22 @@ st.markdown("""
         color: #1e293b !important;
     }
     
-    /* Navigation Bar */
+    /* Reduce overall spacing */
+    .element-container {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    /* Compact headers */
+    h1 { font-size: 1.8rem !important; margin: 0.5rem 0; }
+    h2 { font-size: 1.5rem !important; margin: 0.4rem 0; }
+    h3 { font-size: 1.3rem !important; margin: 0.3rem 0; }
+    h4 { font-size: 1.1rem !important; margin: 0.25rem 0; }
+    
+    /* Navigation Bar - Compact */
     .nav-container {
         background: #f8fafc;
-        padding: 1rem 0;
-        margin-bottom: 2rem;
+        padding: 0.5rem 0;
+        margin-bottom: 1rem;
         border-bottom: 1px solid #e2e8f0;
         position: sticky;
         top: 0;
@@ -85,21 +98,21 @@ st.markdown("""
     .nav-tabs {
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         flex-wrap: wrap;
     }
     
     .nav-tab {
         background: transparent;
         border: none;
-        padding: 0.75rem 1.5rem;
-        border-radius: 8px;
-        font-weight: 600;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        font-weight: 500;
         color: #64748b;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
     
     .nav-tab:hover {
@@ -112,63 +125,65 @@ st.markdown("""
         background-color: rgba(220,38,38,0.1);
     }
     
-    /* Header Styling */
+    /* Header Styling - Compact */
     .main-header {
         background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-        padding: 1.25rem 1rem;
-        margin-bottom: 1rem;
-        border-radius: 100px;
+        padding: 0.8rem 1rem;
+        margin-bottom: 0.8rem;
+        border-radius: 8px;
         color: white;
         text-align: center;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     
     .main-title {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         font-weight: 700;
-        margin-bottom: 0.5rem;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 0.2rem;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.1);
         color: white !important;
     }
     
     .main-subtitle {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         opacity: 0.9;
         font-weight: 400;
-        margin-bottom: 1rem;
+        margin-bottom: 0.3rem;
         color: white !important;
     }
     
     .creator-badge {
         background: rgba(255,255,255,0.2);
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
+        padding: 0.25rem 0.6rem;
+        border-radius: 12px;
         display: inline-block;
         font-weight: 500;
+        font-size: 0.8rem;
         backdrop-filter: blur(10px);
         color: white !important;
     }
     
-    /* Home Page Specific Styles */
+    /* Home Page Specific Styles - Compact */
     .home-header {
         background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-        padding: 2rem 1rem;
-        border-radius: 12px;
+        padding: 1.2rem 1rem;
+        border-radius: 8px;
         color: white;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.2rem;
     }
     
     .home-header h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-weight: 700;
         color: white !important;
+        margin-bottom: 0.3rem;
     }
     
     .home-header p {
-        font-size: 1rem;
+        font-size: 0.95rem;
         font-weight: 400;
-        margin-top: 0.5rem;
+        margin-top: 0.3rem;
         color: white !important;
     }
     
@@ -178,19 +193,19 @@ st.markdown("""
     }
     
     .section-title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 600;
-        margin-top: 2rem;
+        margin: 1rem 0 0.5rem 0;
     }
     
-    /* Info Cards - ensure visibility */
+    /* Info Cards - Compact */
     .info-card {
         background: #ffffff !important;
         border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 1.5rem;
-        margin: 1rem 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        border-radius: 6px;
+        padding: 0.8rem;
+        margin: 0.5rem 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
 
     .info-card *, .info-card p, .info-card li, .info-card strong, .info-card h3 {
@@ -198,85 +213,111 @@ st.markdown("""
         background-color: transparent !important;
     }
     
-    /* Metric Cards */
+    .info-card h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+    
+    .info-card p {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.4rem !important;
+    }
+    
+    .info-card ul {
+        margin: 0.3rem 0 !important;
+        padding-left: 1rem !important;
+    }
+    
+    .info-card li {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    
+    /* Metric Cards - Compact */
     .metric-card {
         background: white;
-        border-radius: 12px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        border-radius: 6px;
+        padding: 0.8rem;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
         border: 1px solid #f1f5f9;
         text-align: center;
-        margin: 0.5rem 0;
+        margin: 0.3rem 0;
     }
     
     .metric-value {
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: 700;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.2rem;
     }
     
     .metric-label {
         color: #64748b;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 500;
     }
     
-    /* Insight Cards */
+    /* Insight Cards - Compact */
     .insight-card {
         background: #f8fafc;
         border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 0.5rem 0;
+        border-radius: 6px;
+        padding: 0.6rem;
+        margin: 0.3rem 0;
     }
     
     .insight-title {
         font-weight: 600;
         color: #1e293b;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
     }
     
     .insight-text {
         color: #64748b;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        line-height: 1.3;
     }
     
-    /* Status Badges */
+    /* Status Badges - Compact */
     .status-safe {
         background: #dcfce7;
         color: #166534;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
+        padding: 0.3rem 0.6rem;
+        border-radius: 12px;
         font-weight: 600;
+        font-size: 0.8rem;
         display: inline-block;
     }
     
     .status-fraud {
         background: #fecaca;
         color: #991b1b;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
+        padding: 0.3rem 0.6rem;
+        border-radius: 12px;
         font-weight: 600;
+        font-size: 0.8rem;
         display: inline-block;
     }
     
     .status-escalated {
         background: #fef3c7;
         color: #92400e;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
+        padding: 0.3rem 0.6rem;
+        border-radius: 12px;
         font-weight: 600;
+        font-size: 0.8rem;
         display: inline-block;
     }
     
-    /* Input Field Helpers */
+    /* Input Field Helpers - Compact */
     .field-helper {
         background: #f1f5f9;
-        border-left: 4px solid #3b82f6;
-        padding: 0.75rem;
-        margin: 0.5rem 0;
-        border-radius: 4px;
-        font-size: 0.9rem;
+        border-left: 3px solid #3b82f6;
+        padding: 0.4rem;
+        margin: 0.2rem 0;
+        border-radius: 3px;
+        font-size: 0.8rem;
         color: #475569;
     }
     
@@ -285,6 +326,7 @@ st.markdown("""
         text-align: center;
         color: #3b82f6;
         font-weight: 500;
+        font-size: 0.9rem;
         animation: pulse 2s infinite;
     }
     
@@ -294,61 +336,67 @@ st.markdown("""
         100% { opacity: 1; }
     }
     
-    /* Confidence Bar */
+    /* Confidence Bar - Compact */
     .confidence-bar {
         width: 100%;
-        height: 8px;
+        height: 6px;
         background: #e2e8f0;
-        border-radius: 4px;
+        border-radius: 3px;
         overflow: hidden;
-        margin: 0.5rem 0;
+        margin: 0.3rem 0;
     }
     
     .confidence-fill {
         height: 100%;
-        border-radius: 4px;
+        border-radius: 3px;
         transition: width 0.5s ease;
     }
     
-    /* Architecture Diagram */
+    /* Architecture Diagram - Compact */
     .architecture-container {
         background: #f8fafc;
-        border: 2px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 2rem;
-        margin: 2rem 0;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 1rem;
+        margin: 1rem 0;
         text-align: center;
     }
     
     .architecture-container h4 {
         color: #1e293b !important;
-        margin-bottom: 1rem;
+        margin-bottom: 0.6rem;
+        font-size: 1.1rem !important;
     }
     
     .architecture-container p {
         color: #64748b !important;
+        font-size: 0.85rem !important;
     }
     
     .agent-box {
         background: #ffffff;
         border: 1px solid #cbd5e1;
-        border-radius: 8px;
-        padding: 1rem;
-        margin: 0.5rem;
+        border-radius: 4px;
+        padding: 0.4rem 0.6rem;
+        margin: 0.2rem;
         display: inline-block;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         color: #1e293b !important;
         font-weight: 600;
+        font-size: 0.8rem;
     }
     
-    /* Fix expander text visibility */
+    /* Fix expander text visibility - Compact */
     .streamlit-expanderHeader {
         color: #1e293b !important;
+        font-size: 0.95rem !important;
+        padding: 0.5rem 0 !important;
     }
     
     .streamlit-expanderContent {
         background-color: #ffffff !important;
         color: #1e293b !important;
+        padding: 0.5rem 0 !important;
     }
     
     /* Ensure metric cards text is visible */
@@ -356,13 +404,16 @@ st.markdown("""
         color: #1e293b !important;
     }
     
-    /* Button styling fixes */
+    /* Button styling fixes - Compact */
     .stButton > button {
         background-color: #3b82f6 !important;
         color: white !important;
         border: none;
-        border-radius: 8px;
-        font-weight: 600;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        height: auto;
     }
     
     .stButton > button[kind="primary"] {
@@ -376,33 +427,78 @@ st.markdown("""
         border: 1px solid #e2e8f0;
     }
     
-    /* Input field styling */
+    /* Input field styling - Compact */
     .stTextInput > div > div > input {
         color: #1e293b !important;
         background-color: #ffffff !important;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
     }
     
     .stSelectbox > div > div > div {
         color: #1e293b !important;
         background-color: #ffffff !important;
+        font-size: 0.9rem;
     }
     
     .stNumberInput > div > div > input {
         color: #1e293b !important;
         background-color: #ffffff !important;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
     }
     
-    /* Labels for form fields */
+    /* Labels for form fields - Compact */
     .stTextInput > label,
     .stSelectbox > label,
     .stNumberInput > label {
         color: #1e293b !important;
         font-weight: 500;
+        font-size: 0.85rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    
+    /* Compact dataframes */
+    .dataframe {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Compact charts */
+    .js-plotly-plot {
+        margin: 0.5rem 0 !important;
+    }
+    
+    /* Compact columns */
+    .block-container > div {
+        gap: 0.5rem !important;
     }
     
     /* Sidebar styling if needed */
     .css-1d391kg {
         background-color: #ffffff !important;
+    }
+    
+    /* Reduce vertical spacing in columns */
+    [data-testid="column"] {
+        padding: 0 0.25rem !important;
+    }
+    
+    /* Compact metric containers */
+    [data-testid="metric-container"] {
+        background-color: white;
+        border: 1px solid #e2e8f0;
+        padding: 0.5rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    
+    [data-testid="metric-container"] > div {
+        font-size: 0.8rem !important;
+    }
+    
+    [data-testid="metric-container"] [data-testid="metric-value"] {
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -633,9 +729,9 @@ def render_navigation():
     
     pages = [
         ('home', '🏠 Home'),
-        ('fraud_analysis', '🔍 Detect Fraud Transaction'), 
+        ('fraud_analysis', '🔍 Detect Fraud'), 
         ('dashboard', '📊 Dashboard'),
-        ('debugger', '🧠 Timeline Debugger'),
+        ('debugger', '🧠 Debugger'),
         ('about', '📑 About'),
         ('architecture', '🏗️ Architecture')
     ]
@@ -657,7 +753,7 @@ def create_confidence_bar(confidence):
     <div class="confidence-bar">
         <div class="confidence-fill" style="width: {confidence*100}%; background-color: {color};"></div>
     </div>
-    <div style="text-align: center; font-weight: 600; color: {color};">
+    <div style="text-align: center; font-weight: 600; color: {color}; font-size: 0.8rem; margin-top: 0.2rem;">
         {confidence:.1%} Confidence
     </div>
     """
@@ -745,26 +841,26 @@ def render_home():
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown("### 🧠 Overview")
+    st.markdown("### Overview")
     st.markdown("""
-    **AgentScope** is a developer-facing observability tool designed to monitor, debug, and explain the internal decision-making steps of AI agents. It provides deep visibility into reasoning chains, confidence metrics, fallback triggers, and policy rule evaluations—critical for debugging AI workflows in high-stakes domains like fraud detection, compliance, and customer support.
+    **AgentScope** is a developer-facing observability tool designed to monitor, debug, and explain the internal decision-making steps of AI agents. It provides deep visibility into reasoning chains, confidence metrics, fallback triggers, and policy rule evaluations critical for debugging AI workflows in high-stakes domains like fraud detection, compliance, and customer support.
     """)
 
-    st.markdown("### ❓ Why It Matters")
+    st.markdown("### Why It Matters")
     st.markdown("""
-    Multi-step AI agents often make opaque decisions, fail silently, or hallucinate outputs without surfacing internal logic. **AgentScope** solves this by exposing each step in the agent's process—what it analyzed, how confident it was, whether it triggered fallbacks, and what policy was applied.
+    Multi-step AI agents often make opaque decisions, fail silently, or hallucinate outputs without surfacing internal logic. **AgentScope** solves this by exposing each step in the agent's process what it analyzed, how confident it was, whether it triggered fallbacks, and what policy was applied.
     """)
 
-    st.markdown("### 🔍 Key Capabilities")
+    st.markdown("### Key Capabilities")
     st.markdown("""
-    - **Live Timeline Debugger**: Visualizes the sequence of agent steps—from intent detection to model inference—with timestamped context and reasoning.
+    - **Live Timeline Debugger**: Visualizes the sequence of agent steps from intent detection to model inference with timestamped context and reasoning.
     - **Confidence Monitoring**: Tracks system confidence at each stage, highlighting low-confidence decisions for human review.
     - **Fallback Detector**: Flags fallbacks due to missing data, policy mismatch, or model uncertainty.
     - **Policy Compliance Visualization**: Displays rule violations with identifiers (e.g., F1.1, E1.1) and explanations.
     - **Streaming Debug UI**: Real-time Streamlit UI to analyze full traces interactively.
     """)
 
-    st.markdown("### 🧩 Integrated Multi-Agent System")
+    st.markdown("### Integrated Multi-Agent System")
     st.markdown("""
     AgentScope works alongside a modular AI architecture, where each agent plays a role in fraud detection:
 
@@ -777,21 +873,21 @@ def render_home():
     """)
 
     st.markdown("---")
-    st.markdown("### 🚀 Choose an Action")
+    st.markdown("### Choose an Action")
 
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        if st.button("📊 See Dashboard", use_container_width=True):
+        if st.button("📊 Dashboard", use_container_width=True):
             st.session_state.active_page = "dashboard"
             st.rerun()
-        st.caption("View analytics and system performance metrics")
+        st.caption("View analytics and performance metrics")
 
     with col2:
         if st.button("🔍 Fraud Analysis", use_container_width=True):
             st.session_state.active_page = "fraud_analysis"
             st.rerun()
-        st.caption("Submit a transaction and see its fraud decision")
+        st.caption("Submit transaction and see fraud decision")
 
     with col3:
         if st.button("🧠 Timeline Debugger", use_container_width=True):
@@ -803,7 +899,7 @@ def render_home():
         if st.button("📑 About / Docs", use_container_width=True):
             st.session_state.active_page = "about"
             st.rerun()
-        st.caption("See architecture diagram and full project details")
+        st.caption("See architecture and project details")
 
 def render_architecture():
     """Architecture page showing the HTML diagram"""
@@ -818,7 +914,7 @@ def render_architecture():
     try:
         with open("app/ui/architecture.html", "r", encoding="utf-8") as f:
             html_content = f.read()
-        st.components.v1.html(html_content, height=800, scrolling=True)
+        st.components.v1.html(html_content, height=600, scrolling=True)
     except FileNotFoundError:
         st.error("Architecture diagram file not found. Please ensure 'architecture.html' exists in the same directory as this app.")
     except Exception as e:
@@ -835,16 +931,16 @@ def render_fraud_analysis():
 
     # Info Section
     with st.expander("ℹ️ How AgentScope Works", expanded=False):
-        st.markdown("""
+         st.components.v1.html("""
         <div class="info-card">
             <h3>AgentScope: AI Agent Timeline Debugger & Reliability Monitor</h3>
-            <p><strong>Overview:</strong> AgentScope is a developer-facing observability tool designed to monitor, debug, and explain the internal decision-making steps of AI agents. It provides deep visibility into reasoning chains, confidence metrics, fallback triggers, and policy rule evaluations—critical for debugging AI workflows in high-stakes domains like fraud detection, compliance, and customer support.</p>
+            <p><strong>Overview:</strong> AgentScope is a developer-facing observability tool designed to monitor, debug, and explain the internal decision-making steps of AI agents. It provides deep visibility into reasoning chains, confidence metrics, fallback triggers, and policy rule evaluations critical for debugging AI workflows in high-stakes domains like fraud detection, compliance, and customer support.</p>
 
-            <p><strong>Why It Matters:</strong> Multi-step AI agents often make opaque decisions, fail silently, or hallucinate outputs without surfacing internal logic. AgentScope solves this by exposing each step in the agent's process—what it analyzed, how confident it was, whether it triggered fallbacks, and what policy was applied.</p>
+            <p><strong>Why It Matters:</strong> Multi-step AI agents often make opaque decisions, fail silently, or hallucinate outputs without surfacing internal logic. AgentScope solves this by exposing each step in the agent's process what it analyzed, how confident it was, whether it triggered fallbacks, and what policy was applied.</p>
 
             <p><strong>Key Capabilities:</strong></p>
-            <ul style="padding-left: 20px;">
-                <li><strong>Live Timeline Debugger:</strong> Visualizes the sequence of agent steps—from intent detection to model inference—along with timestamped context and reasoning.</li>
+            <ul>
+                <li><strong>Live Timeline Debugger:</strong> Visualizes the sequence of agent steps from intent detection to model inference along with timestamped context and reasoning.</li>
                 <li><strong>Confidence Monitoring:</strong> Tracks how confident the system is at each stage, highlighting low-confidence decisions that may require review.</li>
                 <li><strong>Fallback Detector:</strong> Identifies and logs when the system falls back due to missing data, policy mismatches, or low model certainty.</li>
                 <li><strong>Policy Compliance Visualization:</strong> Flags policy violations in real time with clear identifiers (e.g., F1.1, E1.1) and justification text.</li>
@@ -852,7 +948,7 @@ def render_fraud_analysis():
             </ul>
 
             <p><strong>Integrated Multi-Agent System:</strong> AgentScope operates within a modular AI architecture where each component contributes to fraud detection and compliance reasoning:</p>
-            <ul style="padding-left: 20px;">
+            <ul>
                 <li><strong>Amount Checker:</strong> Evaluates transaction value against high-risk thresholds and card-specific constraints.</li>
                 <li><strong>Location Validator:</strong> Detects geographic mismatches and cross-border behavior that may indicate fraud.</li>
                 <li><strong>Merchant Risk Analyzer:</strong> Screens merchants against blacklists and known fraud networks.</li>
@@ -861,14 +957,14 @@ def render_fraud_analysis():
                 <li><strong>Narrative Generator:</strong> Uses LLMs to produce clear, human-readable explanations of why a transaction was approved, escalated, or flagged.</li>
             </ul>
 
-            <p>Every step taken by these agents is recorded, explained, and visualized by AgentScope—empowering technical teams to understand and trust their AI systems in production.</p>
+            <p>Every step taken by these agents is recorded, explained, and visualized by AgentScope empowering technical teams to understand and trust their AI systems in production.</p>
         </div>
-        """, unsafe_allow_html=True)
+        """, height=500, scrolling=True)
 
     col1, col2 = st.columns([1, 1.5])
 
     with col1:
-        st.markdown("### Transaction Input")
+        st.markdown("#### Transaction Input")
         
         # Transaction ID
         st.text_input(
@@ -942,7 +1038,7 @@ def render_fraud_analysis():
                 submit_transaction()
 
     with col2:
-        st.markdown("### Analysis Results")
+        st.markdown("#### Analysis Results")
 
         # Error Display
         if st.session_state.error_message:
@@ -951,25 +1047,25 @@ def render_fraud_analysis():
         # Results Display
         if st.session_state.status and not st.session_state.processing:
             # Status and Confidence
-            st.markdown("#### Decision Status")
+            st.markdown("**Decision Status**")
             st.markdown(display_status_badge(st.session_state.status), unsafe_allow_html=True)
             
-            st.markdown("#### Confidence Level")
+            st.markdown("**Confidence Level**")
             st.markdown(create_confidence_bar(st.session_state.confidence), unsafe_allow_html=True)
 
             # Narrative
-            st.markdown("#### AI Explanation")
+            st.markdown("**AI Explanation**")
             st.markdown(f"""
-    <div class="info-card">
-        <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6;">
-            “{st.session_state.narrative}”
-        </p>
-    </div>
-""", unsafe_allow_html=True)
+            <div class="info-card">
+                <p style="font-style: italic; font-size: 0.95rem; line-height: 1.4;">
+                    "{st.session_state.narrative}"
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
 
             # Analyst Actions
-            st.markdown("#### Analyst Actions")
-            action_col1, action_col2, action_col3 = st.columns(3)
+            st.markdown("**Analyst Actions**")
+            action_col1, action_col2 = st.columns(2)
             
             with action_col1:
                 if st.button("📋 Escalate", help="Send to human analyst", use_container_width=True):
@@ -980,16 +1076,11 @@ def render_fraud_analysis():
                 if st.button("✅ Mark Safe", help="Override as safe", use_container_width=True):
                     st.session_state.status = "Safe (Manual Override)"
                     st.success("✅ Transaction marked as safe")
-            
-            with action_col3:
-                if st.button("🔄 Override", help="Change decision", use_container_width=True):
-                    st.session_state.status = "Decision Overridden"
-                    st.success("✅ Decision manually overridden")
 
             st.markdown("---")
 
             # Agent Trace
-            st.markdown("#### 🔍 Agent Trace Summary View")
+            st.markdown("**🔍 Agent Trace**")
             
             trace_col1, trace_col2 = st.columns([1, 1])
             with trace_col1:
@@ -998,7 +1089,7 @@ def render_fraud_analysis():
                     fetch_trace()
             
             with trace_col2:
-                if st.button("🧠 View Timeline Debugger", use_container_width=True):
+                if st.button("🧠 Timeline Debugger", use_container_width=True):
                     st.session_state.active_page = "debugger"
                     st.session_state.trace_mode = "verbose"
                     fetch_trace()
@@ -1010,7 +1101,7 @@ def render_fraud_analysis():
 
     # Quick Test Examples
     st.markdown("---")
-    st.markdown("### 🧪 Quick Test Examples")
+    st.markdown("#### 🧪 Quick Test Examples")
     
     example_col1, example_col2, example_col3 = st.columns(3)
     
@@ -1052,14 +1143,14 @@ def render_dashboard():
         df = load_transactions_data()
         
     if df.empty:
-        st.warning("⚠️ No transaction data found. Please check that the CSV file exists at 'fin_guard_agents/app/data/transactions.csv' or process some transactions first.")
+        st.warning("⚠️ No transaction data found. Please check that the CSV file exists or process some transactions first.")
         return
     
     analysis_data = analyze_transactions_data(df)
     insights = generate_insights(analysis_data)
     
     # Data Summary
-    st.markdown("### 📈 Data Overview")
+    st.markdown("#### Data Overview")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -1069,49 +1160,29 @@ def render_dashboard():
         st.info(f"**Historical Data:** {historical_count:,}")
     with col3:
         agent_count = len(df[df['source'] == 'agent_log']) if 'source' in df.columns else 0
-        if agent_count !=0:
+        if agent_count != 0:
             st.info(f"**Agent Logs:** {agent_count:,}")
         else:
             st.info(f"**Agent Logs:** {analysis_data['recent_transactions']:,}")
 
     # Key Performance Metrics
-    st.markdown("### 🎯 Key Performance Metrics")
+    st.markdown("#### Key Performance Metrics")
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value" style="color: #1e293b;">{analysis_data['total_transactions']*3.49:,}</div>
-            <div class="metric-label">Total Transactions</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Total Transactions", f"{analysis_data['total_transactions']*3.49:,.0f}")
     
     with col2:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value" style="color: #ef4444;">{analysis_data['total_fraud']*3.49:,}</div>
-            <div class="metric-label">Fraud Detected</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Fraud Detected", f"{analysis_data['total_fraud']*3.49:,.0f}")
     
     with col3:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value" style="color: #f59e0b;">{analysis_data['fraud_rate']:.1f}%</div>
-            <div class="metric-label">Fraud Rate</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Fraud Rate", f"{analysis_data['fraud_rate']:.1f}%")
     
     with col4:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value" style="color: #10b981;">${analysis_data['total_volume']*3.49:,.0f}</div>
-            <div class="metric-label">Total Volume</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Total Volume", f"${analysis_data['total_volume']*3.49:,.0f}")
 
     # Insights Section
-    st.markdown("### 🧠 AI-Generated Insights")
+    st.markdown("#### AI-Generated Insights")
     for insight in insights:
         st.markdown(f"""
         <div class="insight-card">
@@ -1126,64 +1197,67 @@ def render_dashboard():
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("#### 📊 Daily Transaction Trends")
+        st.markdown("**Daily Transaction Trends**")
         
         if not analysis_data['daily_stats'].empty:
             fig_daily = px.line(
                 analysis_data['daily_stats'].melt(id_vars='date', value_vars=['total_transactions', 'fraud_count']),
-                x='date', y='value', color='variable'
+                x='date', y='value', color='variable', height=300
             )
             fig_daily.update_layout(
-                title='Total vs Fraudulent Transactions Over Time',
+                title=None,
                 font_color="#1e293b",
                 title_font_color="#1e293b",
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                legend=dict(font=dict(color="#1e293b")),
+                legend=dict(font=dict(color="#1e293b"), orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
                 xaxis=dict(
-                    title='Date',
+                    title=None,
                     title_font=dict(color="#1e293b"),
-                    tickfont=dict(color="#1e293b")
+                    tickfont=dict(color="#1e293b", size=10)
                 ),
                 yaxis=dict(
-                    title='Count',
+                    title=None,
                     title_font=dict(color="#1e293b"),
-                    tickfont=dict(color="#1e293b")
-                )
+                    tickfont=dict(color="#1e293b", size=10)
+                ),
+                margin=dict(l=20, r=20, t=30, b=20)
             )
             st.plotly_chart(fig_daily, use_container_width=True)
         else:
             st.info("No daily trend data available")
     
     with col2:
-        st.markdown("#### 💳 Card Type Analysis")
+        st.markdown("**Card Type Analysis**")
         if not analysis_data['card_stats'].empty:
             fig_card = px.bar(
                 analysis_data['card_stats'], 
                 x='card_type', 
                 y=['count', 'fraud_count'],
-                title="",
                 color_discrete_map={
                     'count': '#3b82f6',
                     'fraud_count': '#ef4444'
                 },
-                barmode='group'
+                barmode='group',
+                height=300
             )
             fig_card.update_layout(
+                title=None,
                 font_color="#1e293b",
                 title_font_color="#1e293b",
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                legend=dict(font=dict(color="#1e293b")),
-                xaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b")),
-                yaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b"))
+                legend=dict(font=dict(color="#1e293b"), orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+                xaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=10)),
+                yaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=10)),
+                margin=dict(l=20, r=20, t=30, b=20)
             )
             st.plotly_chart(fig_card, use_container_width=True)
         else:
             st.info("No card type data available")
 
     # Amount Distribution Analysis
-    st.markdown("#### 💰 Transaction Amount Distribution")
+    st.markdown("**Transaction Amount Analysis**")
     col1, col2 = st.columns(2)
 
     with col1:
@@ -1192,18 +1266,21 @@ def render_dashboard():
                 analysis_data['amount_stats'],
                 x='amount_category',
                 y='count',
-                title="Transaction Count by Amount Range",
                 color='fraud_rate',
-                color_continuous_scale='Reds'
+                color_continuous_scale='Reds',
+                height=250
             )
             fig_amount.update_layout(
+                title="Count by Amount Range",
+                title_font_size=12,
                 font_color="#1e293b",
                 title_font_color="#1e293b",
                 plot_bgcolor='white',
                 paper_bgcolor='white',
                 legend=dict(font=dict(color="#1e293b")),
-                xaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b")),
-                yaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b"))
+                xaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=9)),
+                yaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=9)),
+                margin=dict(l=20, r=20, t=30, b=20)
             )
             st.plotly_chart(fig_amount, use_container_width=True)
         else:
@@ -1215,49 +1292,54 @@ def render_dashboard():
                 analysis_data['amount_stats'],
                 x='amount_category',
                 y='fraud_rate',
-                title="Fraud Rate by Amount Range",
                 color='fraud_rate',
-                color_continuous_scale='Reds'
+                color_continuous_scale='Reds',
+                height=250
             )
             fig_rate.update_layout(
+                title="Fraud Rate by Amount Range",
+                title_font_size=12,
                 font_color="#1e293b",
                 title_font_color="#1e293b",
                 plot_bgcolor='white',
                 paper_bgcolor='white',
                 legend=dict(font=dict(color="#1e293b")),
-                xaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b")),
-                yaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b"))
+                xaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=9)),
+                yaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=9)),
+                margin=dict(l=20, r=20, t=30, b=20)
             )
             st.plotly_chart(fig_rate, use_container_width=True)
         else:
             st.info("No fraud rate data available")
 
     # Top Risk Merchants
-    st.markdown("#### 🏪 Top Risk Merchants")
+    st.markdown("**Top Risk Merchants**")
     if not analysis_data['merchant_stats'].empty:
         fig_merchant = px.bar(
             analysis_data['merchant_stats'].head(10),
             x='merchant',
             y='fraud_rate',
-            title="Top 10 Risky Merchants by Fraud Rate",
             color='fraud_rate',
-            color_continuous_scale='Reds'
+            color_continuous_scale='Reds',
+            height=250
         )
         fig_merchant.update_layout(
+            title=None,
             font_color="#1e293b",
             title_font_color="#1e293b",
             plot_bgcolor='white',
             paper_bgcolor='white',
             legend=dict(font=dict(color="#1e293b")),
-            xaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b")),
-            yaxis=dict(title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b"))
+            xaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=9)),
+            yaxis=dict(title=None, title_font=dict(color="#1e293b"), tickfont=dict(color="#1e293b", size=9)),
+            margin=dict(l=20, r=20, t=20, b=20)
         )
         st.plotly_chart(fig_merchant, use_container_width=True)
     else:
         st.info("No merchant data available")
 
     # Geographic Analysis
-    st.markdown("#### 🌍 Geographic Risk Analysis")
+    st.markdown("**Geographic Risk Analysis**")
     if not analysis_data['location_stats'].empty:
         cross_border = analysis_data['location_stats'][analysis_data['location_stats']['is_cross_border']]
         domestic = analysis_data['location_stats'][~analysis_data['location_stats']['is_cross_border']]
@@ -1280,12 +1362,12 @@ def render_dashboard():
         if not cross_border.empty:
             top_risky_locations = cross_border.nlargest(10, 'fraud_rate')[['user_location', 'merchant_location', 'fraud_rate', 'count']]
             st.markdown("**Top Risky Location Pairs:**")
-            st.dataframe(top_risky_locations, use_container_width=True)
+            st.dataframe(top_risky_locations, use_container_width=True, height=200)
     else:
         st.info("No geographic data available")
 
     # Recent Activity
-    st.markdown("### 📊 Recent Activity (Last 7 Days)")
+    st.markdown("**Recent Activity (Last 7 Days)**")
     col1, col2, col3 = st.columns(3)
     
     with col1:
@@ -1299,21 +1381,22 @@ def render_dashboard():
         st.metric("Recent Fraud Rate", f"{recent_fraud_rate:.1f}%")
 
     # Transaction History Table
-    st.markdown("### 📋 Recent Transaction History")
+    st.markdown("**Recent Transaction History**")
     
     # Show recent transactions from the actual data
-    recent_transactions = df.nlargest(20, 'timestamp')[['transaction_id', 'timestamp', 'amount', 'card_type', 'merchant', 'is_fraud']]
+    recent_transactions = df.nlargest(15, 'timestamp')[['transaction_id', 'timestamp', 'amount', 'card_type', 'merchant', 'is_fraud']]
     recent_transactions['status'] = recent_transactions['is_fraud'].apply(lambda x: 'Fraud Detected' if x == 1 else 'Safe')
     recent_transactions = recent_transactions.drop('is_fraud', axis=1)
     
     st.dataframe(
         recent_transactions,
         use_container_width=True,
-        hide_index=True
+        hide_index=True,
+        height=300
     )
     
     # Export functionality
-    st.markdown("### 📤 Data Export")
+    st.markdown("**Data Export**")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -1371,7 +1454,7 @@ def render_debugger():
             st.rerun()
         return
 
-    st.markdown(f"### Agent Trace for Transaction: `{st.session_state.transaction_id}`")
+    st.markdown(f"**Agent Trace for Transaction:** `{st.session_state.transaction_id}`")
     
     # Trace Mode Selection
     col1, col2 = st.columns(2)
@@ -1389,11 +1472,11 @@ def render_debugger():
 
     # Display Verbose Trace
     if st.session_state.trace_mode == "verbose" and st.session_state.trace_verbose_data:
-        st.markdown("#### Detailed Agent Timeline")
+        st.markdown("**Detailed Agent Timeline**")
         
         for i, step in enumerate(st.session_state.trace_verbose_data):
             if isinstance(step, dict):
-                with st.expander(f"🔹 Step {step.get('step', i+1)}: {step.get('component', 'Unknown Component')}", expanded=True):
+                with st.expander(f"🔹 Step {step.get('step', i+1)}: {step.get('component', 'Unknown Component')}", expanded=False):
                     
                     col1, col2 = st.columns([2, 1])
                     
@@ -1430,7 +1513,7 @@ def render_debugger():
                         st.json(step['output_data'])
     
     elif st.session_state.trace_mode == "summary" and st.session_state.trace_summary_data:
-        st.markdown("#### Trace Summary")
+        st.markdown("**Trace Summary**")
         st.json(st.session_state.trace_summary_data)
     
     else:
@@ -1446,12 +1529,12 @@ def render_about():
     """, unsafe_allow_html=True)
 
     # Architecture Overview
-    st.markdown("### 🏗️ System Architecture")
+    st.markdown("#### System Architecture")
     
     st.markdown("""
     <div class="architecture-container">
         <h4>Multi-Agent Fraud Detection Architecture</h4>
-        <div style="margin: 2rem 0;">
+        <div style="margin: 1rem 0;">
             <div class="agent-box">🔍 Amount Checker</div>
             <div class="agent-box">🌍 Location Validator</div>
             <div class="agent-box">🏪 Merchant Analyzer</div>
@@ -1459,20 +1542,20 @@ def render_about():
             <div class="agent-box">⚖️ Compliance Guard</div>
             <div class="agent-box">📝 Narrative Generator</div>
         </div>
-        <p style="margin-top: 2rem; font-style: italic;">
+        <p style="margin-top: 1rem; font-style: italic;">
             Each agent contributes specialized analysis, with AgentScope providing full observability into their decision processes.
         </p>
     </div>
     """, unsafe_allow_html=True)
 
     # Component Details
-    st.markdown("### 🧩 Component Breakdown")
+    st.markdown("#### Component Breakdown")
     
     components = [
         {
             "name": "Amount Checker",
             "icon": "💰",
-            "description": "Evaluates transaction amounts against dynamic risk thresholds and card-specific limits. Implements real-time anomaly detection for unusual spending patterns. Key features include:\n- Dynamic threshold adjustment based on user history\n- Velocity checks for rapid spending increases\n- Card-type specific limits (e.g., $3,000 for virtual cards)\n- Time-of-day analysis for unusual activity",
+            "description": "Evaluates transaction amounts against dynamic risk thresholds and card-specific limits. Implements real-time anomaly detection for unusual spending patterns.",
             "policies": [
                 "F1.1: High-value transaction threshold ($5,000 default)",
                 "F1.2: Virtual card limit enforcement ($3,000 max)",
@@ -1483,7 +1566,7 @@ def render_about():
         {
             "name": "Location Validator", 
             "icon": "🌍",
-            "description": "Analyzes geographic patterns using IP geolocation, card issuer data, and historical user locations. Implements:\n- Real-time distance calculation between user and merchant locations\n- Travel time feasibility analysis\n- Country/region risk scoring\n- Device fingerprinting for location verification",
+            "description": "Analyzes geographic patterns using IP geolocation, card issuer data, and historical user locations. Implements real-time distance calculation and travel time feasibility analysis.",
             "policies": [
                 "F2.1: Impossible travel detection (>500 miles in 1 hour)",
                 "F2.2: High-risk country list (Nigeria, Russia, etc.)",
@@ -1494,7 +1577,7 @@ def render_about():
         {
             "name": "Merchant Risk Analyzer",
             "icon": "🏪", 
-            "description": "Maintains and screens against a dynamic merchant risk database with:\n- Real-time blacklist updates from financial networks\n- Merchant category code (MCC) risk scoring\n- Historical fraud patterns by merchant\n- New merchant probation period analysis",
+            "description": "Maintains and screens against a dynamic merchant risk database with real-time blacklist updates from financial networks and merchant category code (MCC) risk scoring.",
             "policies": [
                 "F3.1: Blacklisted merchant auto-decline",
                 "F3.2: High-risk MCC categories (e.g., electronics, jewelry)",
@@ -1505,7 +1588,7 @@ def render_about():
         {
             "name": "ML Scorer",
             "icon": "🤖",
-            "description": "Deploys an ensemble of machine learning models including:\n- XGBoost classifier trained on historical fraud patterns\n- Deep learning anomaly detection\n- Real-time feature engineering pipeline\n- Model explainability with SHAP values\n- Continuous learning from analyst feedback",
+            "description": "Deploys an ensemble of machine learning models including XGBoost classifier trained on historical fraud patterns, deep learning anomaly detection, and real-time feature engineering.",
             "policies": [
                 "F4.1: Primary model confidence threshold (85%)",
                 "F4.2: Fallback model activation (primary confidence <60%)",
@@ -1516,7 +1599,7 @@ def render_about():
         {
             "name": "Compliance Guard",
             "icon": "⚖️",
-            "description": "Enforces regulatory requirements and internal policies with:\n- Automated OFAC/SDN list screening\n- AML pattern detection\n- Transaction monitoring rules\n- Audit trail generation\n- Regulatory reporting automation",
+            "description": "Enforces regulatory requirements and internal policies with automated OFAC/SDN list screening, AML pattern detection, and transaction monitoring rules.",
             "policies": [
                 "E1.1: OFAC/SDN list screening",
                 "E1.2: Structuring detection (>3 transactions <$10k in 24h)",
@@ -1527,7 +1610,7 @@ def render_about():
         {
             "name": "Narrative Generator",
             "icon": "📝",
-            "description": "Generates human-readable explanations using:\n- Fine-tuned LLM (GPT-4 architecture)\n- Policy rule citation engine\n- Multi-language support\n- Context-aware summarization\n- Confidence-weighted explanation",
+            "description": "Generates human-readable explanations using fine-tuned LLM (GPT-4 architecture), policy rule citation engine, multi-language support, and context-aware summarization.",
             "policies": [
                 "N1.1: Explanation completeness (must cite all key factors)",
                 "N1.2: Regulatory language requirements",
@@ -1539,7 +1622,7 @@ def render_about():
 
     for component in components:
         with st.expander(f"{component['icon']} {component['name']}", expanded=False):
-            st.markdown(f"**Description:**\n{component['description']}")
+            st.markdown(f"**Description:** {component['description']}")
             st.markdown("**Key Policies:**")
             for policy in component['policies']:
                 st.markdown(f"- {policy}")
@@ -1547,7 +1630,7 @@ def render_about():
     st.markdown("---")
 
     # Technology Stack
-    st.markdown("### 🛠️ Technology Stack")
+    st.markdown("#### Technology Stack")
     
     col1, col2, col3 = st.columns(3)
     
@@ -1597,7 +1680,7 @@ def render_about():
         """)
 
     # Deployment & Infrastructure
-    st.markdown("### 🚀 Deployment & Infrastructure")
+    st.markdown("#### Deployment & Infrastructure")
     
     st.markdown("""
     **Deployment Options:**
@@ -1618,44 +1701,23 @@ def render_about():
       backend:
         image: agentscope-backend:latest
         ports: ["8000:8000"]
-        environment:
-          - MODEL_PATH=/models/production
       frontend:
         image: agentscope-frontend:latest
         ports: ["8501:8501"]
-        depends_on:
-          - backend
     ```
     
     **3. Kubernetes (Production):**
     ```bash
-    # Helm chart installation
     helm install agentscope ./chart --values production-values.yaml
     ```
-    
-    **4. Cloud Platforms:**
-    - **AWS**: EKS with RDS PostgreSQL
-    - **GCP**: GKE with Cloud SQL
-    - **Azure**: AKS with Azure SQL
     """)
 
     st.markdown("---")
 
     # Security & Compliance
-    st.markdown("### 🔒 Security & Compliance")
+    st.markdown("#### Security & Compliance")
     
     st.markdown("""
-    **Security Architecture:**
-    
-    ```mermaid
-    graph TD
-        A[Client] -->|TLS 1.3| B[API Gateway]
-        B --> C[Auth Service]
-        C --> D[Rate Limiter]
-        D --> E[Fraud Detection Microservices]
-        E --> F[Encrypted Database]
-    ```
-    
     **Security Features:**
     - **Zero Trust Architecture**: Mutual TLS between services
     - **FIPS 140-2 Validated Cryptography**: AES-256, SHA-384
@@ -1674,37 +1736,32 @@ def render_about():
     st.markdown("---")
 
     # System Requirements
-    st.markdown("### ⚙️ System Requirements")
+    st.markdown("#### System Requirements")
     
-    st.markdown("""
-    **Development Environment:**
-    - **CPU**: 4 cores (Intel/AMD x86-64)
-    - **Memory**: 16GB RAM
-    - **Storage**: 50GB SSD
-    - **OS**: Linux/macOS/Windows WSL2
-    - **Python**: 3.10+
+    col1, col2 = st.columns(2)
     
-    **Production Deployment:**
-    - **Minimum:**
-      - 4 vCPUs
-      - 16GB RAM
-      - 100GB storage
-    - **Recommended:**
-      - 8 vCPUs
-      - 32GB RAM
-      - 500GB NVMe storage
-      - GPU acceleration for ML models
+    with col1:
+        st.markdown("""
+        **Development Environment:**
+        - **CPU**: 4 cores (Intel/AMD x86-64)
+        - **Memory**: 16GB RAM
+        - **Storage**: 50GB SSD
+        - **OS**: Linux/macOS/Windows WSL2
+        - **Python**: 3.10+
+        """)
     
-    **Cloud Specifications:**
-    - **AWS**: m6i.xlarge (4vCPU, 16GB) minimum
-    - **GCP**: e2-standard-4 (4vCPU, 16GB)
-    - **Azure**: D4s v4 (4vCPU, 16GB)
-    """)
+    with col2:
+        st.markdown("""
+        **Production Deployment:**
+        - **Minimum**: 4 vCPUs, 16GB RAM, 100GB storage
+        - **Recommended**: 8 vCPUs, 32GB RAM, 500GB NVMe storage
+        - **Cloud**: AWS m6i.xlarge, GCP e2-standard-4, Azure D4s v4
+        """)
 
     st.markdown("---")
 
     # Project Information
-    st.markdown("### 👨‍💻 Project Information")
+    st.markdown("#### Project Information")
     
     col1, col2 = st.columns(2)
     
@@ -1713,7 +1770,7 @@ def render_about():
         **Creator:** Durga Katreddi  
         **Version:** 2.1.0  
         **License:** Apache 2.0  
-        **Repository:** [https://github.com/KATREDDIDURGA/Agentscope-FinGuard](https://github.com/KATREDDIDURGA/Agentscope-FinGuard)  
+        **Repository:** [GitHub](https://github.com/KATREDDIDURGA/Agentscope-FinGuard)  
         """)
     
     with col2:
@@ -1724,7 +1781,7 @@ def render_about():
         """)
 
     # Usage Instructions
-    st.markdown("### 📖 Getting Started")
+    st.markdown("#### Getting Started")
     
     with st.expander("🚀 Quick Start Guide", expanded=False):
         st.markdown("""
