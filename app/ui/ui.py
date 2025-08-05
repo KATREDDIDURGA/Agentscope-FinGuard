@@ -8,6 +8,7 @@ import plotly.graph_objects as go
 from datetime import datetime, timedelta
 import time
 import random
+import html
 import os
 import glob
 import numpy as np
@@ -1055,12 +1056,14 @@ def render_fraud_analysis():
 
             # Narrative
             st.markdown("**AI Explanation**")
+            narrative = html.escape(st.session_state.narrative)
+
             st.markdown(f"""
-            <div class="info-card">
-                <p style="font-style: italic; font-size: 0.95rem; line-height: 1.4;">
-                    "{st.session_state.narrative}"
-                </p>
-            </div>
+                <div class="info-card">
+                    <p style="font-style: italic; font-size: 0.95rem; line-height: 1.4;">
+                        {narrative}
+                    </p>
+                </div>
             """, unsafe_allow_html=True)
 
             # Analyst Actions
