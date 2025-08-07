@@ -1,329 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinGuard Agents + AgentScope Architecture</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, gray 0%, gray 100%);
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .title {
-            font-size: 2.5em;
-            font-weight: bold;
-            background: linear-gradient(45deg, #151516, #1c1c1d);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            color: #666;
-            font-size: 1.2em;
-        }
-        .architecture {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-        .layer {
-            border-radius: 15px;
-            padding: 25px;
-            position: relative;
-            overflow: hidden;
-        }
-        .layer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--layer-color), var(--layer-color-light));
-        }
-        .layer-title {
-            font-size: 1.8em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: var(--layer-color);
-        }
-        .components {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-        .component {
-            background: rgba(255,255,255,0.8);
-            border-radius: 12px;
-            padding: 20px;
-            border: 2px solid var(--layer-color-light);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        .component:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-color: var(--layer-color);
-        }
-        .component-icon {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .component-title {
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: #333;
-        }
-        .component-subtitle {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 10px;
-        }
-        .component-desc {
-            color: #777;
-            font-size: 0.85em;
-            line-height: 1.4;
-        }
-        
-        /* Layer-specific colors */
-        .frontend {
-            --layer-color: #101111;
-            --layer-color-light: #edeff0;
-            background: linear-gradient(135deg, #e1f5fe, #f0f9ff);
-        }
-        .api {
-            --layer-color: #e9e5ed;
-            --layer-color-light: #d1c4e9;
-            background: linear-gradient(135deg, #f3e5f5, #faf4ff);
-        }
-        .agents {
-            --layer-color: #0e0f0e;
-            --layer-color-light: #f5f9f5;
-            background: linear-gradient(135deg, #e8f5e8, #f4faf4);
-        }
-        .data {
-            --layer-color: #0b0b0b;
-            --layer-color-light: #f7f5f1;
-            background: linear-gradient(135deg, #fff3e0, #fffbf7);
-        }
-        
-        .flow-arrows {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .arrow {
-            font-size: 2em;
-            color: #666;
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-        
-        .data-flow {
-            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
-            border-radius: 15px;
-            padding: 25px;
-            margin-top: 30px;
-        }
-        .flow-title {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        .flow-path {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 10px 0;
-        }
-        .flow-step {
-            background: white;
-            padding: 10px 15px;
-            border-radius: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            font-weight: 500;
-            color: #333;
-        }
-        .flow-arrow {
-            color: #666;
-            font-size: 1.2em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FinGuard Agents + AgentScope Architecture</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+      color: #111;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .architecture-diagram {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .layer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .layer-title {
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 4px;
+    }
+
+    .box {
+      background: #fff;
+      border: 1px solid #999;
+      padding: 15px 20px;
+      border-radius: 4px;
+      width: 220px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .box-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .arrow {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+
+    .flow-line {
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="title">🛡️ FinGuard Agents + AgentScope</div>
-            <div class="subtitle">Multi-Agent GenAI System for Real-time Fraud Prediction & Explainability</div>
-        </div>
-        
-        <div class="architecture">
-            <!-- Frontend Layer -->
-            <div class="layer frontend">
-                <div class="layer-title">🖥️ Frontend Layer (Streamlit)</div>
-                <div class="components">
-                    <div class="component">
-                        <div class="component-icon">📋</div>
-                        <div class="component-title">Navigation Menu</div>
-                        <div class="component-subtitle">streamlit_app.py</div>
-                        <div class="component-desc">Home | Detect Fraud | Dashboard | About<br/>User-friendly interface navigation</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📝</div>
-                        <div class="component-title">Fraud Input Form</div>
-                        <div class="component-subtitle">Transaction Details</div>
-                        <div class="component-desc">Capture transaction data<br/>Amount, merchant, location, time</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📊</div>
-                        <div class="component-title">Real-time Display</div>
-                        <div class="component-subtitle">Live Results</div>
-                        <div class="component-desc">Prediction • Confidence<br/>Narrative • AgentScope Trace</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📈</div>
-                        <div class="component-title">Analytics View</div>
-                        <div class="component-subtitle">Historical Analysis</div>
-                        <div class="component-desc">Saved logs visualization<br/>Trends and patterns analysis</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="flow-arrows"><div class="arrow">⬇️</div></div>
-            
-            <!-- API Layer -->
-            <div class="layer api">
-                <div class="layer-title">🚀 FastAPI Backend</div>
-                <div class="components">
-                    <div class="component">
-                        <div class="component-icon">🔍</div>
-                        <div class="component-title">/predict Endpoint</div>
-                        <div class="component-subtitle">main.py</div>
-                        <div class="component-desc">Primary fraud detection endpoint<br/>Orchestrates agent workflow</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📋</div>
-                        <div class="component-title">/trace/summary</div>
-                        <div class="component-subtitle">Trace API</div>
-                        <div class="component-desc">AgentScope summary logs<br/>High-level decision overview</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📝</div>
-                        <div class="component-title">/trace/verbose</div>
-                        <div class="component-subtitle">Detailed Trace</div>
-                        <div class="component-desc">Step-by-step agent execution<br/>Complete traceability</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="flow-arrows"><div class="arrow">⬇️</div></div>
-            
-            <!-- Agent Layer -->
-            <div class="layer agents">
-                <div class="layer-title">🤖 Multi-Agent System</div>
-                <div class="components">
-                    <div class="component">
-                        <div class="component-icon">🎯</div>
-                        <div class="component-title">Routing Logic</div>
-                        <div class="component-subtitle">agent_router.py</div>
-                        <div class="component-desc">Intelligent agent coordination<br/>Dynamic workflow management</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">🛡️</div>
-                        <div class="component-title">Fraud Detection Agent</div>
-                        <div class="component-subtitle">fraud_agent.py</div>
-                        <div class="component-desc">RandomForestClassifier<br/>Feature engineering & prediction</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📖</div>
-                        <div class="component-title">Narrative Agent</div>
-                        <div class="component-subtitle">narrative_agent.py</div>
-                        <div class="component-desc">LlamaIndex integration<br/>Natural language explanations</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">⚠️</div>
-                        <div class="component-title">Fallback Agent</div>
-                        <div class="component-subtitle">fallback_agent.py</div>
-                        <div class="component-desc">Low confidence handling<br/>Missing data recovery</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📋</div>
-                        <div class="component-title">Trace Logger</div>
-                        <div class="component-subtitle">step_logger.py</div>
-                        <div class="component-desc">AgentScope integration<br/>Complete audit trail</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="flow-arrows"><div class="arrow">⬇️</div></div>
-            
-            <!-- Data Layer -->
-            <div class="layer data">
-                <div class="layer-title">💾 Data & Storage</div>
-                <div class="components">
-                    <div class="component">
-                        <div class="component-icon">🤖</div>
-                        <div class="component-title">ML Model</div>
-                        <div class="component-subtitle">fraud_model.pkl</div>
-                        <div class="component-desc">Trained RandomForest<br/>Log-transformed features</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">📁</div>
-                        <div class="component-title">Agent Logs</div>
-                        <div class="component-subtitle">agent_logs/</div>
-                        <div class="component-desc">JSON format logs<br/>Decision history & traces</div>
-                    </div>
-                    <div class="component">
-                        <div class="component-icon">⚙️</div>
-                        <div class="component-title">Configuration</div>
-                        <div class="component-subtitle">config.yaml</div>
-                        <div class="component-desc">Thresholds & settings<br/>Model parameters</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Data Flow -->
-        <div class="data-flow">
-            <div class="flow-title">🔄 Data Flow Pipeline</div>
-            <div class="flow-path">
-                <div class="flow-step">Input</div>
-                <div class="flow-arrow">➜</div>
-                <div class="flow-step">Routing Logic</div>
-                <div class="flow-arrow">➜</div>
-                <div class="flow-step">AI Agents</div>
-                <div class="flow-arrow">➜</div>
-                <div class="flow-step">Trace Logger</div>
-                <div class="flow-arrow">➜</div>
-                <div class="flow-step">UI Display</div>
-            </div>
-            <div style="text-align: center; margin-top: 15px; color: #666;">
-                <strong>Output:</strong> Status • Confidence • Narrative • Trace Logs
-            </div>
-        </div>
+
+  <h1>🛡️ FinGuard Agents + AgentScope</h1>
+  <h2>System Architecture Diagram</h2>
+
+  <div class="architecture-diagram">
+
+    <!-- Frontend Layer -->
+    <div class="layer-title">Frontend (Streamlit UI)</div>
+    <div class="layer">
+      <div class="box">
+        <div class="box-title">Navigation Menu</div>
+        <div>Home, Fraud Check, Dashboard</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Fraud Input Form</div>
+        <div>Transaction data entry (amount, location...)</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Live Results Display</div>
+        <div>Status, Confidence, Narrative, Trace</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Analytics View</div>
+        <div>Historical log analysis and charts</div>
+      </div>
     </div>
+
+    <div class="flow-line">↓</div>
+
+    <!-- API Layer -->
+    <div class="layer-title">Backend Layer (FastAPI)</div>
+    <div class="layer">
+      <div class="box">
+        <div class="box-title">/predict</div>
+        <div>Main entry for fraud evaluation</div>
+      </div>
+      <div class="box">
+        <div class="box-title">/trace/summary</div>
+        <div>Returns high-level decision trace</div>
+      </div>
+      <div class="box">
+        <div class="box-title">/trace/verbose</div>
+        <div>Returns step-by-step agent actions</div>
+      </div>
+    </div>
+
+    <div class="flow-line">↓</div>
+
+    <!-- Agent Layer -->
+    <div class="layer-title">Agent System Layer</div>
+    <div class="layer">
+      <div class="box">
+        <div class="box-title">Routing Logic</div>
+        <div>Agent orchestration & control flow</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Fraud Detection Agent</div>
+        <div>ML model (RandomForestClassifier)</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Narrative Agent</div>
+        <div>LlamaIndex-based explanation generation</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Fallback Agent</div>
+        <div>Handles low-confidence or missing cases</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Trace Logger</div>
+        <div>Logs each agent step into JSON</div>
+      </div>
+    </div>
+
+    <div class="flow-line">↓</div>
+
+    <!-- Data Layer -->
+    <div class="layer-title">Data & Storage Layer</div>
+    <div class="layer">
+      <div class="box">
+        <div class="box-title">ML Model File</div>
+        <div>fraud_model.pkl (trained offline)</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Agent Logs</div>
+        <div>JSON logs saved per trace ID</div>
+      </div>
+      <div class="box">
+        <div class="box-title">Configuration</div>
+        <div>config.yaml (thresholds, paths, etc.)</div>
+      </div>
+    </div>
+
+    <div class="flow-line">↓</div>
+
+    <!-- Output -->
+    <div class="layer-title">Final Output</div>
+    <div class="layer">
+      <div class="box">
+        <div class="box-title">Output to UI</div>
+        <div>Status • Confidence • Narrative • Trace</div>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
