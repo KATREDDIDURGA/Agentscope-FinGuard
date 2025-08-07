@@ -471,7 +471,7 @@ st.markdown("""
     
     /* Fix expander text visibility */
     .streamlit-expanderHeader {
-        color: #1e293b !important;
+        color: #ffffff !important;
     }
     
     .streamlit-expanderContent {
