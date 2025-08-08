@@ -537,7 +537,7 @@ st.markdown("""
 
 # --- Configuration ---
 API_BASE_URL = "https://fingard-agents-api.onrender.com"
-# API_BASE_URL = "http://localhost:8000"
+
 
 # --- Session State Initialization ---
 def init_session_state():
@@ -1602,7 +1602,22 @@ def render_debugger():
     if st.session_state.trace_mode == "verbose" and st.session_state.trace_verbose_data:
         st.markdown("#### Detailed Agent Timeline")
         
-        # Use all trace data since API should return only steps for requested transaction
+        # Use all trace data since API should return only 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # 
+        # s for requested transaction
         current_transaction_steps = st.session_state.trace_verbose_data
         
         # Debug info (remove this after testing)
