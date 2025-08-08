@@ -34,7 +34,8 @@ The Streamlit app talks directly to the Render-hosted API. You can submit transa
 **4. Debugger - Verbose Trace**  
 `images/trace_verbose.png` – Step-by-step breakdown of every agent action, including inputs, outputs, and timings.
 
-![Verbose Trace](images/trace_verbose.png)
+![Live Results View](images/results_view1.png)
+![Live Results View](images/results_view2.png)
 
 **5. System Architecture Diagram**  
 `images/architecture_diagram.png` – Visual diagram of the frontend, backend, agents, and data layers.
