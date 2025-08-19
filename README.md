@@ -10,6 +10,10 @@ https://katreddidurga-agentscope-finguard-appuiui-rlc8of.streamlit.app/
 Backend API (FastAPI)  
 https://fingard-agents-api.onrender.com
 
+Watch the 5 minute demo video
+[![Watch the video](https://drive.google.com/file/d/1RiyGPT3KCt3BKNnCJVYr6xU5nAcud4b9/view?usp=sharing)](https://drive.google.com/file/d/1RiyGPT3KCt3BKNnCJVYr6xU5nAcud4b9/view?usp=sharing)
+
+
 The Streamlit app talks directly to the Render-hosted API. You can submit transactions, see the AI decision, and inspect the trace for any request.
 
 ---
